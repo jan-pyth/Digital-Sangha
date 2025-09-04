@@ -1,22 +1,18 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "deploy_api.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/status.py": {
+      "runtime": "python3.9"
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/status",
-      "dest": "/deploy_api.py"
+      "source": "/",
+      "destination": "/api/status"
     },
     {
-      "src": "/",
-      "dest": "/deploy_api.py"
+      "source": "/status",
+      "destination": "/api/status"
     }
-  ],
-  "env": {
-    "DIGITAL_SANGHA_SIGNATURE": "0x269504b723b5b3b7"
-  }
+  ]
 }
