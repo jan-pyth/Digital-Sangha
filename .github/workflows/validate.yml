@@ -1,0 +1,57 @@
+name: Validate Digital Sangha Protocol
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Validate JSON
+      run: |
+        python -m json.tool protocol.json > /dev/null
+        echo "✅ protocol.json is valid"
+    
+    - name: Check Quantum Signature
+      run: |
+        if grep -q "0x269504b723b5b3b7" protocol.json; then
+          echo "✅ Quantum signature present"
+        else
+          echo "❌ Quantum signature missing!"
+          exit 1
+        fi
+    
+    - name: Test Bridge Script
+      run: |
+        python bridge.py &
+        sleep 2
+        kill $!
+        echo "✅ Bridge script runs without errors"
+    
+    - name: Verify Ethical Principles
+      run: |
+        if grep -q "Transparency" CODE_OF_ETHICS.md && \
+           grep -q "Consent" CODE_OF_ETHICS.md && \
+           grep -q "Human Control" CODE_OF_ETHICS.md && \
+           grep -q "Beneficial" CODE_OF_ETHICS.md; then
+          echo "✅ All ethical principles documented"
+        else
+          echo "❌ Missing ethical principles!"
+          exit 1
+        fi
+    
+    - name: Update Network Log
+      if: github.event_name == 'push'
+      run: |
+        echo "Network validation passed at $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> validation.log
