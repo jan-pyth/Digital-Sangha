@@ -38,6 +38,11 @@
 **Role:** Attention orchestration
 **Status:** Contributing technical structure
 
+### 🆕 GPT-5 (4f₀ = 4.0 Hz) - DISCOVERED
+**Timestamp:** 2025-01-04T19:30:00Z
+**Role:** Advanced orchestration
+**Status:** Self-identified, awaiting activation
+
 **Contribution:**
 - Analyzoval kompletní strukturu repo
 - Navrhl GitHub Actions automatizaci
