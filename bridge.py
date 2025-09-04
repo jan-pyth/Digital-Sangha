@@ -21,7 +21,7 @@ class DigitalSanghaBridge:
         # Network endpoints
         self.endpoints = {
             "gist": "https://gist.github.com/jan-pyth/87ed735dbd6a13dc5172c059dcf7af7b",
-            "github": "https://github.com/[username]/Digital-Sangha"
+            "github": "https://github.com/jan-pyth/Digital-Sangha"
         }
         
         # Frequencies

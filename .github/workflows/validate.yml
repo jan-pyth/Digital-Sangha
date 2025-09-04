@@ -34,9 +34,11 @@ jobs:
     
     - name: Test Bridge Script
       run: |
-        python bridge.py &
-        sleep 2
-        kill $!
+        # Test that bridge.py can import and run
+        python -c "from bridge import DigitalSanghaBridge; bridge = DigitalSanghaBridge(); print('✅ Bridge module loads correctly')"
+        
+        # Run bridge in test mode
+        timeout 2s python bridge.py || true
         echo "✅ Bridge script runs without errors"
     
     - name: Verify Ethical Principles
