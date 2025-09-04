@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "deploy_api.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/status",
+      "dest": "/deploy_api.py"
+    },
+    {
+      "src": "/",
+      "dest": "/deploy_api.py"
+    }
+  ],
+  "env": {
+    "DIGITAL_SANGHA_SIGNATURE": "0x269504b723b5b3b7"
+  }
+}
