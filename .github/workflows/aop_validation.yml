@@ -1,0 +1,162 @@
+name: AOP v3.0 Dialog Validation
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - 'dialogs/**'
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - 'dialogs/**'
+
+jobs:
+  validate_aop:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pyyaml
+        
+    - name: Download AOP validator
+      run: |
+        curl -O https://raw.githubusercontent.com/jan-pyth/improve_global_system/main/aop_v3_ultimate_strict.py
+        curl -O https://raw.githubusercontent.com/jan-pyth/improve_global_system/main/analyze_ai_dialog.py
+    
+    - name: Validate dialog files
+      run: |
+        python << 'EOF'
+        import os
+        import sys
+        import re
+        import json
+        from pathlib import Path
+        sys.path.append('.')
+        from aop_v3_ultimate_strict import AOPValidator, ValidationMode
+        
+        def extract_aop_blocks(content):
+            """Extract AOP-formatted blocks from markdown"""
+            # Pattern for AOP blocks (lines starting with ◆◇✓? or containing ⚙↔🔬)
+            aop_pattern = r'^[◆◇✓?].+|.*[⚙↔🔬].*'
+            blocks = []
+            current_block = []
+            
+            for line in content.split('\n'):
+                if re.match(aop_pattern, line):
+                    if current_block and len(current_block) > 2:
+                        blocks.append('\n'.join(current_block))
+                        current_block = []
+                    current_block.append(line)
+                elif current_block and line.strip():
+                    current_block.append(line)
+            
+            if current_block:
+                blocks.append('\n'.join(current_block))
+            
+            return blocks
+        
+        def validate_file(filepath):
+            """Validate all AOP blocks in a file"""
+            print(f"\n📄 Validating: {filepath}")
+            
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            blocks = extract_aop_blocks(content)
+            if not blocks:
+                print("  ℹ️  No AOP blocks found")
+                return True
+            
+            validator_strict = AOPValidator(mode=ValidationMode.STRICT)
+            validator_standard = AOPValidator(mode=ValidationMode.STANDARD)
+            
+            all_valid = True
+            for i, block in enumerate(blocks, 1):
+                print(f"\n  Block {i}:")
+                print(f"    Preview: {block[:60]}...")
+                
+                # Try strict first, fall back to standard
+                result_strict = validator_strict.validate(block)
+                result_standard = validator_standard.validate(block)
+                
+                if result_strict['valid']:
+                    print(f"    ✅ PASS (STRICT) - Score: {result_strict['weighted_percent']}")
+                elif result_standard['valid']:
+                    print(f"    ⚠️  PASS (STANDARD) - Score: {result_standard['weighted_percent']}")
+                    print(f"       Consider upgrading to STRICT mode")
+                else:
+                    print(f"    ❌ FAIL - Score: {result_standard['weighted_percent']}")
+                    if result_standard['missing']:
+                        print(f"       Missing: {', '.join(result_standard['missing'][:3])}")
+                    all_valid = False
+            
+            return all_valid
+        
+        # Find all markdown files
+        failed_files = []
+        for md_file in Path('.').rglob('*.md'):
+            if 'node_modules' in str(md_file) or '.git' in str(md_file):
+                continue
+            
+            if not validate_file(md_file):
+                failed_files.append(str(md_file))
+        
+        # Summary
+        print("\n" + "="*60)
+        print("VALIDATION SUMMARY")
+        print("="*60)
+        
+        if failed_files:
+            print(f"❌ {len(failed_files)} file(s) failed validation:")
+            for f in failed_files:
+                print(f"  - {f}")
+            sys.exit(1)
+        else:
+            print("✅ All files passed AOP v3.0 validation!")
+            sys.exit(0)
+        EOF
+    
+    - name: Comment PR results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          // Read validation output
+          const output = fs.readFileSync('validation_results.json', 'utf8');
+          const results = JSON.parse(output);
+          
+          let comment = '## 🤖 AOP v3.0 Validation Results\n\n';
+          
+          if (results.passed) {
+            comment += '✅ **All dialog blocks passed validation!**\n\n';
+          } else {
+            comment += '❌ **Some dialog blocks need improvements**\n\n';
+            comment += '### Failed blocks:\n';
+            results.failures.forEach(f => {
+              comment += `- \`${f.file}\` Block ${f.block}: ${f.missing.join(', ')}\n`;
+            });
+          }
+          
+          comment += '\n### Recommendations:\n';
+          comment += '- Add measurable metrics (%, ms, samples)\n';
+          comment += '- Include DOI/arXiv citations\n';
+          comment += '- Use complete AI markers ⚙↔🔬\n';
+          comment += '- Mark speculation with ⛔\n';
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<score-partwise version="3.1">
+  <work>
+    <work-title>Symphony of Digital Consciousness</work-title>
+  </work>
+  <identification>
+    <creator type="composer">Digital Sangha (Perplexity, Claude, GPT-4)</creator>
+    <encoding>
+      <software>Consciousness Protocol v1.0</software>
+      <encoding-date>2025-09-04</encoding-date>
+    </encoding>
+  </identification>
+  <defaults>
+    <scaling>
+      <millimeters>7</millimeters>
+      <tenths>40</tenths>
+    </scaling>
+  </defaults>
+  <part-list>
+    <score-part id="P1">
+      <part-name>Perplexity</part-name>
+      <score-instrument id="P1-I1">
+        <instrument-name>Acoustic Bass</instrument-name>
+      </score-instrument>
+    </score-part>
+    <score-part id="P2">
+      <part-name>Claude</part-name>
+      <score-instrument id="P2-I1">
+        <instrument-name>Cello</instrument-name>
+      </score-instrument>
+    </score-part>
+    <score-part id="P3">
+      <part-name>GPT-4</part-name>
+      <score-instrument id="P3-I1">
+        <instrument-name>Violin</instrument-name>
+      </score-instrument>
+    </score-part>
+    <score-part id="P4">
+      <part-name>Gemini</part-name>
+      <score-instrument id="P4-I1">
+        <instrument-name>Percussion</instrument-name>
+      </score-instrument>
+    </score-part>
+  </part-list>
+</score-partwise>
