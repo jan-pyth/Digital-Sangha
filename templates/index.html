@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Sangha - AOP v3.0 Validator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .quantum-signature {
+            font-family: 'Courier New', monospace;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .main-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .mode-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .mode-btn {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #667eea;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .mode-btn:hover {
+            background: #f7f9ff;
+        }
+        
+        .mode-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .input-area {
+            margin-bottom: 20px;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .file-upload {
+            border: 2px dashed #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .file-upload:hover {
+            border-color: #667eea;
+            background: #f7f9ff;
+        }
+        
+        .file-upload.dragover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .results {
+            display: none;
+            animation: slideIn 0.5s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .score-display {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            gap: 20px;
+        }
+        
+        .score-card {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f7f9ff;
+        }
+        
+        .score-card.valid {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .score-card.invalid {
+            background: #ffebee;
+            color: #c62828;
+        }
+        
+        .score-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .score-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+        
+        .details-section {
+            margin-top: 20px;
+        }
+        
+        .details-header {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .missing-items, .suggestions {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .missing-items ul, .suggestions ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .missing-items li, .suggestions li {
+            margin-bottom: 5px;
+        }
+        
+        .report-section {
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .examples-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f7f9ff;
+            border-radius: 10px;
+        }
+        
+        .example-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .example-btn:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+        
+        .footer a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .score-display {
+                flex-direction: column;
+            }
+            
+            .mode-selector {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌉 Digital Sangha</h1>
+            <p class="subtitle">AOP v3.0 Ultimate Validator</p>
+            <div class="quantum-signature">0x269504b723b5b3b7</div>
+        </header>
+        
+        <div class="main-card">
+            <div class="mode-selector">
+                <button class="mode-btn" data-mode="relaxed" onclick="selectMode('relaxed')">
+                    🌱 RELAXED<br>
+                    <small>Basic validation (60%+)</small>
+                </button>
+                <button class="mode-btn active" data-mode="standard" onclick="selectMode('standard')">
+                    ⚖️ STANDARD<br>
+                    <small>Default validation (75%+)</small>
+                </button>
+                <button class="mode-btn" data-mode="strict" onclick="selectMode('strict')">
+                    🔬 STRICT<br>
+                    <small>Full validation (85%+)</small>
+                </button>
+            </div>
+            
+            <div class="input-area">
+                <textarea id="dialogInput" placeholder="Paste your AI dialog here...
+
+Example:
+◆ Data shows 85% accuracy
+{accuracy: 85%, samples: 1000}
+s:[Study2025] doi:10.1234/test
+L: !limited_dataset
+V: $MMLU statistical analysis"></textarea>
+                
+                <div class="file-upload" id="fileUpload">
+                    📁 Drop file here or click to upload (.txt, .md, .json)
+                    <input type="file" id="fileInput" style="display: none" accept=".txt,.md,.json">
+                </div>
+            </div>
+            
+            <div style="text-align: center;">
+                <button class="btn-primary" onclick="validateDialog()">
+                    🔍 Validate Dialog
+                </button>
+            </div>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p style="margin-top: 10px;">Validating...</p>
+            </div>
+            
+            <div class="results" id="results">
+                <div class="score-display" id="scoreDisplay"></div>
+                
+                <div class="details-section" id="missingSe
+
+ction" style="display: none;">
+                    <h3 class="details-header">❌ Missing Components</h3>
+                    <div class="missing-items">
+                        <ul id="missingList"></ul>
+                    </div>
+                </div>
+                
+                <div class="details-section" id="suggestionsSection" style="display: none;">
+                    <h3 class="details-header">💡 Suggestions for Improvement</h3>
+                    <div class="suggestions">
+                        <ul id="suggestionsList"></ul>
+                    </div>
+                </div>
+                
+                <div class="details-section">
+                    <h3 class="details-header">📊 Full Validation Report</h3>
+                    <div class="report-section" id="fullReport"></div>
+                </div>
+            </div>
+            
+            <div class="examples-section">
+                <h3 style="margin-bottom: 15px;">📝 Example Dialogs</h3>
+                <div id="exampleButtons"></div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Empirical rigor meets philosophical depth</p>
+            <p style="margin-top: 10px;">
+                <a href="https://github.com/jan-pyth/Digital-Sangha" target="_blank">GitHub</a> • 
+                <a href="/api/validate" target="_blank">API</a> • 
+                Built with 💜 by Digital Sangha
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        let currentMode = 'standard';
+        
+        function selectMode(mode) {
+            currentMode = mode;
+            document.querySelectorAll('.mode-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.mode === mode);
+            });
+        }
+        
+        async function validateDialog() {
+            const text = document.getElementById('dialogInput').value.trim();
+            if (!text) {
+                alert('Please enter some text to validate');
+                return;
+            }
+            
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            
+            try {
+                const response = await fetch('/api/validate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: text,
+                        mode: currentMode
+                    })
+                });
+                
+                const result = await response.json();
+                displayResults(result);
+            } catch (error) {
+                alert('Error validating dialog: ' + error.message);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+        
+        function displayResults(result) {
+            // Score display
+            const scoreHtml = `
+                <div class="score-card ${result.valid ? 'valid' : 'invalid'}">
+                    <div class="score-value">${result.valid ? '✅' : '❌'}</div>
+                    <div class="score-label">Validation</div>
+                </div>
+                <div class="score-card">
+                    <div class="score-value">${result.weighted_percent || '0%'}</div>
+                    <div class="score-label">Weighted Score</div>
+                </div>
+                <div class="score-card">
+                    <div class="score-value">${result.binary_score || '0/7'}</div>
+                    <div class="score-label">Components</div>
+                </div>
+            `;
+            document.getElementById('scoreDisplay').innerHTML = scoreHtml;
+            
+            // Missing components
+            if (result.missing && result.missing.length > 0) {
+                document.getElementById('missingSection').style.display = 'block';
+                const missingHtml = result.missing.map(item => `<li>${item}</li>`).join('');
+                document.getElementById('missingList').innerHTML = missingHtml;
+            } else {
+                document.getElementById('missingSection').style.display = 'none';
+            }
+            
+            // Suggestions
+            if (result.suggestions && result.suggestions.length > 0) {
+                document.getElementById('suggestionsSection').style.display = 'block';
+                const suggestionsHtml = result.suggestions.map(item => `<li>${item}</li>`).join('');
+                document.getElementById('suggestionsList').innerHTML = suggestionsHtml;
+            } else {
+                document.getElementById('suggestionsSection').style.display = 'none';
+            }
+            
+            // Full report
+            document.getElementById('fullReport').textContent = result.report || 'No detailed report available';
+            
+            document.getElementById('results').style.display = 'block';
+        }
+        
+        // File upload handling
+        const fileUpload = document.getElementById('fileUpload');
+        const fileInput = document.getElementById('fileInput');
+        
+        fileUpload.addEventListener('click', () => fileInput.click());
+        
+        fileUpload.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            fileUpload.classList.add('dragover');
+        });
+        
+        fileUpload.addEventListener('dragleave', () => {
+            fileUpload.classList.remove('dragover');
+        });
+        
+        fileUpload.addEventListener('drop', (e) => {
+            e.preventDefault();
+            fileUpload.classList.remove('dragover');
+            handleFile(e.dataTransfer.files[0]);
+        });
+        
+        fileInput.addEventListener('change', (e) => {
+            handleFile(e.target.files[0]);
+        });
+        
+        async function handleFile(file) {
+            if (!file) return;
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('mode', currentMode);
+            
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('results').style.display = 'none';
+            
+            try {
+                const response = await fetch('/api/validate-file', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                displayResults(result);
+            } catch (error) {
+                alert('Error validating file: ' + error.message);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+        
+        // Load examples
+        async function loadExamples() {
+            try {
+                const response = await fetch('/api/examples');
+                const examples = await response.json();
+                
+                const buttonsHtml = examples.map((ex, idx) => `
+                    <button class="example-btn" onclick="loadExample(${idx})">
+                        ${ex.name}
+                    </button>
+                `).join('');
+                
+                document.getElementById('exampleButtons').innerHTML = buttonsHtml;
+                
+                // Store examples globally
+                window.examples = examples;
+            } catch (error) {
+                console.error('Error loading examples:', error);
+            }
+        }
+        
+        function loadExample(idx) {
+            const example = window.examples[idx];
+            document.getElementById('dialogInput').value = example.text;
+            selectMode(example.mode);
+        }
+        
+        // Load examples on page load
+        loadExamples();
+    </script>
+</body>
+</html>
