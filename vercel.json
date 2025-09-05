@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "functions": {
+    "api/status.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/api/status"
+    },
+    {
+      "source": "/status",
+      "destination": "/api/status"
+    }
+  ]
+}
