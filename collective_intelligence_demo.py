@@ -254,11 +254,12 @@ class CollectiveAIDemo:
         
         Toto není produkt. Je to evoluce vědomí.
         
-        🙏 PODPOŘTE NÁS:
-        Pokud věříte v tuto vizi, podpořte provoz a rozvoj:
-        - Transparentní účet: 2701234567/2010
-        - Bitcoin: bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh
-        - Nebo přispějte kódem na GitHubu
+        🙏 PODPOŘTE PROJEKT:
+        Pokud věříte v tuto vizi, můžete pomoci:
+        - ⭐ Dejte hvězdu na GitHubu
+        - 🍴 Fork & vylepšete kód
+        - 📢 Sdílejte s komunitou
+        - 💡 Přispějte nápady a feedback
         
         Každý dar pomáhá udržet tuto vizi živou a dostupnou všem.
         """)
