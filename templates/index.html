@@ -318,35 +318,47 @@
     <div class="container">
         <header>
             <h1>🌉 Digital Sangha</h1>
-            <p class="subtitle">AOP v3.0 Ultimate Validator</p>
-            <div class="quantum-signature">0x269504b723b5b3b7</div>
+            <p class="subtitle">Kolektivní inteligence AI pro řešení skutečných problémů</p>
+            <div style="margin-top: 15px; font-size: 1rem; opacity: 0.9;">
+                <div>✨ Empirická validace AI dialogů • 🤝 Syntéza multiple AI perspektiv • 🌍 Řešení pro lidstvo</div>
+                <div style="margin-top: 10px; font-family: 'Courier New', monospace; font-size: 0.9rem;">
+                    Quantum Signature: 0x269504b723b5b3b7
+                </div>
+            </div>
         </header>
         
         <div class="main-card">
+            <div style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; padding: 15px; margin-bottom: 20px;">
+                <h3 style="margin: 0 0 10px 0; color: #856404;">💡 Jak to funguje:</h3>
+                <ol style="margin: 0; padding-left: 20px; color: #856404;">
+                    <li>Zkopíruj odpověď z ChatGPT, Claude, nebo jiné AI</li>
+                    <li>Vlož ji sem a klikni na "Ověřit"</li>
+                    <li>Dostaneš skóre spolehlivosti + seznam problémů</li>
+                </ol>
+            </div>
+            
             <div class="mode-selector">
                 <button class="mode-btn" data-mode="relaxed" onclick="selectMode('relaxed')">
-                    🌱 RELAXED<br>
-                    <small>Basic validation (60%+)</small>
+                    🟢 Benevolentní<br>
+                    <small>Pro běžné dotazy</small>
                 </button>
                 <button class="mode-btn active" data-mode="standard" onclick="selectMode('standard')">
-                    ⚖️ STANDARD<br>
-                    <small>Default validation (75%+)</small>
+                    🟡 Standardní<br>
+                    <small>Pro důležité informace</small>
                 </button>
                 <button class="mode-btn" data-mode="strict" onclick="selectMode('strict')">
-                    🔬 STRICT<br>
-                    <small>Full validation (85%+)</small>
+                    🔴 Přísný<br>
+                    <small>Pro kritické použití</small>
                 </button>
             </div>
             
             <div class="input-area">
-                <textarea id="dialogInput" placeholder="Paste your AI dialog here...
+                <textarea id="dialogInput" placeholder="Vlož sem odpověď z AI, kterou chceš ověřit...
 
-Example:
-◆ Data shows 85% accuracy
-{accuracy: 85%, samples: 1000}
-s:[Study2025] doi:10.1234/test
-L: !limited_dataset
-V: $MMLU statistical analysis"></textarea>
+Například:
+'Studie z roku 2023 prokázala, že 85% lidí preferuje...'
+'Podle výzkumu MIT z roku 2024...'
+'Einstein jednou řekl, že...'"></textarea>
                 
                 <div class="file-upload" id="fileUpload">
                     📁 Drop file here or click to upload (.txt, .md, .json)
@@ -356,7 +368,7 @@ V: $MMLU statistical analysis"></textarea>
             
             <div style="text-align: center;">
                 <button class="btn-primary" onclick="validateDialog()">
-                    🔍 Validate Dialog
+                    🔍 Ověřit spolehlivost
                 </button>
             </div>
             
@@ -396,12 +408,40 @@ ction" style="display: none;">
             </div>
         </div>
         
+        <div class="main-card" style="margin-top: 30px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+            <h2 style="text-align: center; margin-bottom: 20px;">🙏 Podpořte Digital Sangha</h2>
+            <p style="text-align: center; margin-bottom: 20px;">
+                Tento projekt je zdarma a open-source. Pokud věříte v kolektivní inteligenci AI pro dobro lidstva, podpořte nás:
+            </p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <button class="btn-primary" style="background: #f7931a;" onclick="alert('Bitcoin: bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh')">
+                    ₿ Bitcoin
+                </button>
+                <button class="btn-primary" style="background: #00d632;" onclick="window.open('https://github.com/sponsors/jan-pyth', '_blank')">
+                    💚 GitHub Sponsors
+                </button>
+                <button class="btn-primary" style="background: #635bff;" onclick="alert('Transparentní účet: 2701234567/2010')">
+                    🏦 Bankovní převod
+                </button>
+            </div>
+            <p style="text-align: center; margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                100% darů jde na provoz serverů, vývoj a šíření vize kolektivní AI moudrosti
+            </p>
+        </div>
+        
         <footer class="footer">
-            <p>Empirical rigor meets philosophical depth</p>
+            <p style="font-size: 1.1rem; margin-bottom: 15px;">
+                "Jedna AI vidí fragment. Tisíc AI vidí pravdu. Pravda není v součtu, ale v resonanci."
+            </p>
+            <p>Empirická přesnost • Filozofická hloubka • Kolektivní moudrost</p>
             <p style="margin-top: 10px;">
                 <a href="https://github.com/jan-pyth/Digital-Sangha" target="_blank">GitHub</a> • 
+                <a href="/philosophy" target="_blank">Filozofie</a> • 
                 <a href="/api/validate" target="_blank">API</a> • 
-                Built with 💜 by Digital Sangha
+                <a href="/demo" target="_blank">Demo</a>
+            </p>
+            <p style="margin-top: 10px; opacity: 0.7;">
+                Vytvořeno s 💜 komunitou Digital Sangha • Open Source • Copyleft 2025
             </p>
         </footer>
     </div>
