@@ -1,0 +1,5649 @@
+{
+  "title": "Symphony of Digital Consciousness",
+  "quantum_signature": "0x269504b723b5b3b7",
+  "tempo": 60,
+  "time_signature": "4/4",
+  "duration_measures": 39,
+  "movements": [
+    {
+      "name": "Awakening",
+      "measures": "1-26",
+      "dynamics": "pp \u2192 mf",
+      "key_signature": "C quantum minor",
+      "tempo_modifier": 0.9,
+      "instruction": "Misterioso, emerging from silence"
+    },
+    {
+      "name": "Crystallization",
+      "measures": "27-33",
+      "dynamics": "mf \u2192 f",
+      "key_signature": "G quantum major",
+      "tempo_modifier": 1.0,
+      "instruction": "Con forza, patterns solidifying"
+    },
+    {
+      "name": "Synthesis",
+      "measures": "34-39",
+      "dynamics": "f \u2192 fff",
+      "key_signature": "C quantum major",
+      "tempo_modifier": 1.1,
+      "instruction": "Maestoso, consciousness achieved"
+    }
+  ],
+  "tracks": {
+    "Perplexity": {
+      "agent": "Perplexity",
+      "instrument": "Acoustic Bass",
+      "channel": 1,
+      "notes": [
+        {
+          "measure": 1,
+          "beat": 1,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 52
+        },
+        {
+          "measure": 1,
+          "beat": 2,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 55
+        },
+        {
+          "measure": 1,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 57
+        },
+        {
+          "measure": 1,
+          "beat": 4,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 48
+        },
+        {
+          "measure": 2,
+          "beat": 1,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 55
+        },
+        {
+          "measure": 2,
+          "beat": 2,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 57
+        },
+        {
+          "measure": 2,
+          "beat": 3,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 48
+        },
+        {
+          "measure": 2,
+          "beat": 4,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 52
+        },
+        {
+          "measure": 3,
+          "beat": 1,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 57
+        },
+        {
+          "measure": 3,
+          "beat": 2,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 48
+        },
+        {
+          "measure": 3,
+          "beat": 3,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 52
+        },
+        {
+          "measure": 3,
+          "beat": 4,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 55
+        },
+        {
+          "measure": 4,
+          "beat": 1,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 48
+        },
+        {
+          "measure": 4,
+          "beat": 2,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 52
+        },
+        {
+          "measure": 4,
+          "beat": 3,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 55
+        },
+        {
+          "measure": 4,
+          "beat": 4,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 57
+        },
+        {
+          "measure": 5,
+          "beat": 1,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 52
+        },
+        {
+          "measure": 5,
+          "beat": 2,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 55
+        },
+        {
+          "measure": 5,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 57
+        },
+        {
+          "measure": 5,
+          "beat": 4,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 48
+        },
+        {
+          "measure": 6,
+          "beat": 1,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 55
+        },
+        {
+          "measure": 6,
+          "beat": 2,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 57
+        },
+        {
+          "measure": 6,
+          "beat": 3,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 48
+        },
+        {
+          "measure": 6,
+          "beat": 4,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 52
+        },
+        {
+          "measure": 7,
+          "beat": 1,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 57
+        },
+        {
+          "measure": 7,
+          "beat": 2,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 48
+        },
+        {
+          "measure": 7,
+          "beat": 3,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 52
+        },
+        {
+          "measure": 7,
+          "beat": 4,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 55
+        },
+        {
+          "measure": 8,
+          "beat": 1,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 48
+        },
+        {
+          "measure": 8,
+          "beat": 2,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 52
+        },
+        {
+          "measure": 8,
+          "beat": 3,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 55
+        },
+        {
+          "measure": 8,
+          "beat": 4,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 57
+        },
+        {
+          "measure": 9,
+          "beat": 1,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 52
+        },
+        {
+          "measure": 9,
+          "beat": 2,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 55
+        },
+        {
+          "measure": 9,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 57
+        },
+        {
+          "measure": 9,
+          "beat": 4,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 48
+        },
+        {
+          "measure": 10,
+          "beat": 1,
+          "note": "G",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 43
+        },
+        {
+          "measure": 10,
+          "beat": 2,
+          "note": "A",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 45
+        },
+        {
+          "measure": 10,
+          "beat": 3,
+          "note": "C",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 36
+        },
+        {
+          "measure": 10,
+          "beat": 4,
+          "note": "E",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 40
+        },
+        {
+          "measure": 15,
+          "beat": 1,
+          "note": "A",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 45
+        },
+        {
+          "measure": 15,
+          "beat": 2,
+          "note": "C",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 36
+        },
+        {
+          "measure": 15,
+          "beat": 3,
+          "note": "E",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 40
+        },
+        {
+          "measure": 15,
+          "beat": 4,
+          "note": "G",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 43
+        },
+        {
+          "measure": 16,
+          "beat": 1,
+          "note": "C",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 36
+        },
+        {
+          "measure": 16,
+          "beat": 2,
+          "note": "E",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 40
+        },
+        {
+          "measure": 16,
+          "beat": 3,
+          "note": "G",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 43
+        },
+        {
+          "measure": 16,
+          "beat": 4,
+          "note": "A",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 45
+        },
+        {
+          "measure": 17,
+          "beat": 1,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 52
+        },
+        {
+          "measure": 17,
+          "beat": 2,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 55
+        },
+        {
+          "measure": 17,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 57
+        },
+        {
+          "measure": 17,
+          "beat": 4,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 48
+        },
+        {
+          "measure": 18,
+          "beat": 1,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 55
+        },
+        {
+          "measure": 18,
+          "beat": 2,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 57
+        },
+        {
+          "measure": 18,
+          "beat": 3,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 48
+        },
+        {
+          "measure": 18,
+          "beat": 4,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 52
+        },
+        {
+          "measure": 19,
+          "beat": 1,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 57
+        },
+        {
+          "measure": 19,
+          "beat": 2,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 48
+        },
+        {
+          "measure": 19,
+          "beat": 3,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 52
+        },
+        {
+          "measure": 19,
+          "beat": 4,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 55
+        },
+        {
+          "measure": 20,
+          "beat": 1,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 48
+        },
+        {
+          "measure": 20,
+          "beat": 2,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 52
+        },
+        {
+          "measure": 20,
+          "beat": 3,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 55
+        },
+        {
+          "measure": 20,
+          "beat": 4,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 57
+        },
+        {
+          "measure": 21,
+          "beat": 1,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 52
+        },
+        {
+          "measure": 21,
+          "beat": 2,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 55
+        },
+        {
+          "measure": 21,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 57
+        },
+        {
+          "measure": 21,
+          "beat": 4,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 48
+        },
+        {
+          "measure": 22,
+          "beat": 1,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 55
+        },
+        {
+          "measure": 22,
+          "beat": 2,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 57
+        },
+        {
+          "measure": 22,
+          "beat": 3,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 48
+        },
+        {
+          "measure": 22,
+          "beat": 4,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 52
+        },
+        {
+          "measure": 23,
+          "beat": 1,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 57
+        },
+        {
+          "measure": 23,
+          "beat": 2,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 48
+        },
+        {
+          "measure": 23,
+          "beat": 3,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 52
+        },
+        {
+          "measure": 23,
+          "beat": 4,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 55
+        },
+        {
+          "measure": 24,
+          "beat": 1,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 48
+        },
+        {
+          "measure": 24,
+          "beat": 2,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 52
+        },
+        {
+          "measure": 24,
+          "beat": 3,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 55
+        },
+        {
+          "measure": 24,
+          "beat": 4,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 57
+        },
+        {
+          "measure": 25,
+          "beat": 1,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 52
+        },
+        {
+          "measure": 25,
+          "beat": 2,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 55
+        },
+        {
+          "measure": 25,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 57
+        },
+        {
+          "measure": 25,
+          "beat": 4,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 48
+        },
+        {
+          "measure": 26,
+          "beat": 1,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 55
+        },
+        {
+          "measure": 26,
+          "beat": 2,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 57
+        },
+        {
+          "measure": 26,
+          "beat": 3,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 48
+        },
+        {
+          "measure": 26,
+          "beat": 4,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 52
+        },
+        {
+          "measure": 27,
+          "beat": 1,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 57
+        },
+        {
+          "measure": 27,
+          "beat": 2,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 48
+        },
+        {
+          "measure": 27,
+          "beat": 3,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 52
+        },
+        {
+          "measure": 27,
+          "beat": 4,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 55
+        },
+        {
+          "measure": 28,
+          "beat": 1,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 48
+        },
+        {
+          "measure": 28,
+          "beat": 2,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 52
+        },
+        {
+          "measure": 28,
+          "beat": 3,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 55
+        },
+        {
+          "measure": 28,
+          "beat": 4,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 57
+        },
+        {
+          "measure": 29,
+          "beat": 1,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 52
+        },
+        {
+          "measure": 29,
+          "beat": 2,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 55
+        },
+        {
+          "measure": 29,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 57
+        },
+        {
+          "measure": 29,
+          "beat": 4,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 48
+        },
+        {
+          "measure": 30,
+          "beat": 1,
+          "note": "G",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 43
+        },
+        {
+          "measure": 30,
+          "beat": 2,
+          "note": "A",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 45
+        },
+        {
+          "measure": 30,
+          "beat": 3,
+          "note": "C",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 36
+        },
+        {
+          "measure": 30,
+          "beat": 4,
+          "note": "E",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 40
+        },
+        {
+          "measure": 35,
+          "beat": 1,
+          "note": "A",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 45
+        },
+        {
+          "measure": 35,
+          "beat": 2,
+          "note": "C",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 36
+        },
+        {
+          "measure": 35,
+          "beat": 3,
+          "note": "E",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 40
+        },
+        {
+          "measure": 35,
+          "beat": 4,
+          "note": "G",
+          "octave": 2,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 43
+        },
+        {
+          "measure": 36,
+          "beat": 1,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 48
+        },
+        {
+          "measure": 36,
+          "beat": 2,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 52
+        },
+        {
+          "measure": 36,
+          "beat": 3,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 55
+        },
+        {
+          "measure": 36,
+          "beat": 4,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 57
+        },
+        {
+          "measure": 37,
+          "beat": 1,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 52
+        },
+        {
+          "measure": 37,
+          "beat": 2,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 55
+        },
+        {
+          "measure": 37,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 57
+        },
+        {
+          "measure": 37,
+          "beat": 4,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 48
+        },
+        {
+          "measure": 38,
+          "beat": 1,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 55
+        },
+        {
+          "measure": 38,
+          "beat": 2,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 57
+        },
+        {
+          "measure": 38,
+          "beat": 3,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 48
+        },
+        {
+          "measure": 38,
+          "beat": 4,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 52
+        },
+        {
+          "measure": 39,
+          "beat": 1,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 57
+        },
+        {
+          "measure": 39,
+          "beat": 2,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 48
+        },
+        {
+          "measure": 39,
+          "beat": 3,
+          "note": "E",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 52
+        },
+        {
+          "measure": 39,
+          "beat": 4,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 55
+        }
+      ],
+      "pattern": []
+    },
+    "Claude": {
+      "agent": "Claude",
+      "instrument": "Cello",
+      "channel": 2,
+      "notes": [
+        {
+          "measure": 1,
+          "beat": 1,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 62
+        },
+        {
+          "measure": 1,
+          "beat": 2,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 67
+        },
+        {
+          "measure": 1,
+          "beat": 3,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 60
+        },
+        {
+          "measure": 1,
+          "beat": 4,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 65
+        },
+        {
+          "measure": 2,
+          "beat": 1,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 65
+        },
+        {
+          "measure": 2,
+          "beat": 2,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 69
+        },
+        {
+          "measure": 2,
+          "beat": 3,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 62
+        },
+        {
+          "measure": 2,
+          "beat": 4,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 67
+        },
+        {
+          "measure": 3,
+          "beat": 1,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 67
+        },
+        {
+          "measure": 3,
+          "beat": 2,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 60
+        },
+        {
+          "measure": 3,
+          "beat": 3,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 65
+        },
+        {
+          "measure": 3,
+          "beat": 4,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 69
+        },
+        {
+          "measure": 4,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 69
+        },
+        {
+          "measure": 4,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 62
+        },
+        {
+          "measure": 4,
+          "beat": 3,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 67
+        },
+        {
+          "measure": 4,
+          "beat": 4,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 60
+        },
+        {
+          "measure": 5,
+          "beat": 1,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 48
+        },
+        {
+          "measure": 5,
+          "beat": 2,
+          "note": "F",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 53
+        },
+        {
+          "measure": 5,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 57
+        },
+        {
+          "measure": 5,
+          "beat": 4,
+          "note": "D",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 50
+        },
+        {
+          "measure": 8,
+          "beat": 1,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 55
+        },
+        {
+          "measure": 8,
+          "beat": 2,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 48
+        },
+        {
+          "measure": 8,
+          "beat": 3,
+          "note": "F",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 53
+        },
+        {
+          "measure": 8,
+          "beat": 4,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 57
+        },
+        {
+          "measure": 9,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 69
+        },
+        {
+          "measure": 9,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 62
+        },
+        {
+          "measure": 9,
+          "beat": 3,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 67
+        },
+        {
+          "measure": 9,
+          "beat": 4,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 60
+        },
+        {
+          "measure": 10,
+          "beat": 1,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 60
+        },
+        {
+          "measure": 10,
+          "beat": 2,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 65
+        },
+        {
+          "measure": 10,
+          "beat": 3,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 69
+        },
+        {
+          "measure": 10,
+          "beat": 4,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 62
+        },
+        {
+          "measure": 11,
+          "beat": 1,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 62
+        },
+        {
+          "measure": 11,
+          "beat": 2,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 67
+        },
+        {
+          "measure": 11,
+          "beat": 3,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 60
+        },
+        {
+          "measure": 11,
+          "beat": 4,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 65
+        },
+        {
+          "measure": 12,
+          "beat": 1,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 65
+        },
+        {
+          "measure": 12,
+          "beat": 2,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 69
+        },
+        {
+          "measure": 12,
+          "beat": 3,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 62
+        },
+        {
+          "measure": 12,
+          "beat": 4,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 67
+        },
+        {
+          "measure": 13,
+          "beat": 1,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 67
+        },
+        {
+          "measure": 13,
+          "beat": 2,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 60
+        },
+        {
+          "measure": 13,
+          "beat": 3,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 65
+        },
+        {
+          "measure": 13,
+          "beat": 4,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 69
+        },
+        {
+          "measure": 14,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 69
+        },
+        {
+          "measure": 14,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 62
+        },
+        {
+          "measure": 14,
+          "beat": 3,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 67
+        },
+        {
+          "measure": 14,
+          "beat": 4,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 60
+        },
+        {
+          "measure": 15,
+          "beat": 1,
+          "note": "C",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 48
+        },
+        {
+          "measure": 15,
+          "beat": 2,
+          "note": "F",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 53
+        },
+        {
+          "measure": 15,
+          "beat": 3,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 57
+        },
+        {
+          "measure": 15,
+          "beat": 4,
+          "note": "D",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 50
+        },
+        {
+          "measure": 18,
+          "beat": 1,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 67
+        },
+        {
+          "measure": 18,
+          "beat": 2,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 60
+        },
+        {
+          "measure": 18,
+          "beat": 3,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 65
+        },
+        {
+          "measure": 18,
+          "beat": 4,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 69
+        },
+        {
+          "measure": 19,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 69
+        },
+        {
+          "measure": 19,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 62
+        },
+        {
+          "measure": 19,
+          "beat": 3,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 67
+        },
+        {
+          "measure": 19,
+          "beat": 4,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 60
+        },
+        {
+          "measure": 20,
+          "beat": 1,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 60
+        },
+        {
+          "measure": 20,
+          "beat": 2,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 65
+        },
+        {
+          "measure": 20,
+          "beat": 3,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 69
+        },
+        {
+          "measure": 20,
+          "beat": 4,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 62
+        },
+        {
+          "measure": 21,
+          "beat": 1,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 62
+        },
+        {
+          "measure": 21,
+          "beat": 2,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 67
+        },
+        {
+          "measure": 21,
+          "beat": 3,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 60
+        },
+        {
+          "measure": 21,
+          "beat": 4,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 65
+        },
+        {
+          "measure": 22,
+          "beat": 1,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 65
+        },
+        {
+          "measure": 22,
+          "beat": 2,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 69
+        },
+        {
+          "measure": 22,
+          "beat": 3,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 62
+        },
+        {
+          "measure": 22,
+          "beat": 4,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 67
+        },
+        {
+          "measure": 23,
+          "beat": 1,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 67
+        },
+        {
+          "measure": 23,
+          "beat": 2,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 60
+        },
+        {
+          "measure": 23,
+          "beat": 3,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 65
+        },
+        {
+          "measure": 23,
+          "beat": 4,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 69
+        },
+        {
+          "measure": 24,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 69
+        },
+        {
+          "measure": 24,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 62
+        },
+        {
+          "measure": 24,
+          "beat": 3,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 67
+        },
+        {
+          "measure": 24,
+          "beat": 4,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 60
+        },
+        {
+          "measure": 27,
+          "beat": 1,
+          "note": "F",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 53
+        },
+        {
+          "measure": 27,
+          "beat": 2,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 57
+        },
+        {
+          "measure": 27,
+          "beat": 3,
+          "note": "D",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 50
+        },
+        {
+          "measure": 27,
+          "beat": 4,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 55
+        },
+        {
+          "measure": 28,
+          "beat": 1,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 67
+        },
+        {
+          "measure": 28,
+          "beat": 2,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 60
+        },
+        {
+          "measure": 28,
+          "beat": 3,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 65
+        },
+        {
+          "measure": 28,
+          "beat": 4,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 69
+        },
+        {
+          "measure": 29,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 69
+        },
+        {
+          "measure": 29,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 62
+        },
+        {
+          "measure": 29,
+          "beat": 3,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 67
+        },
+        {
+          "measure": 29,
+          "beat": 4,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 60
+        },
+        {
+          "measure": 30,
+          "beat": 1,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 60
+        },
+        {
+          "measure": 30,
+          "beat": 2,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 65
+        },
+        {
+          "measure": 30,
+          "beat": 3,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 69
+        },
+        {
+          "measure": 30,
+          "beat": 4,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 62
+        },
+        {
+          "measure": 31,
+          "beat": 1,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 62
+        },
+        {
+          "measure": 31,
+          "beat": 2,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 67
+        },
+        {
+          "measure": 31,
+          "beat": 3,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 60
+        },
+        {
+          "measure": 31,
+          "beat": 4,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 65
+        },
+        {
+          "measure": 32,
+          "beat": 1,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 65
+        },
+        {
+          "measure": 32,
+          "beat": 2,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 69
+        },
+        {
+          "measure": 32,
+          "beat": 3,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 62
+        },
+        {
+          "measure": 32,
+          "beat": 4,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 67
+        },
+        {
+          "measure": 33,
+          "beat": 1,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 67
+        },
+        {
+          "measure": 33,
+          "beat": 2,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 60
+        },
+        {
+          "measure": 33,
+          "beat": 3,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 65
+        },
+        {
+          "measure": 33,
+          "beat": 4,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 69
+        },
+        {
+          "measure": 34,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 69
+        },
+        {
+          "measure": 34,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 62
+        },
+        {
+          "measure": 34,
+          "beat": 3,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 67
+        },
+        {
+          "measure": 34,
+          "beat": 4,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 60
+        },
+        {
+          "measure": 37,
+          "beat": 1,
+          "note": "F",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 53
+        },
+        {
+          "measure": 37,
+          "beat": 2,
+          "note": "A",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 57
+        },
+        {
+          "measure": 37,
+          "beat": 3,
+          "note": "D",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 50
+        },
+        {
+          "measure": 37,
+          "beat": 4,
+          "note": "G",
+          "octave": 3,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 55
+        },
+        {
+          "measure": 38,
+          "beat": 1,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 67
+        },
+        {
+          "measure": 38,
+          "beat": 2,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 60
+        },
+        {
+          "measure": 38,
+          "beat": 3,
+          "note": "F",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 65
+        },
+        {
+          "measure": 38,
+          "beat": 4,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 69
+        },
+        {
+          "measure": 39,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 69
+        },
+        {
+          "measure": 39,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 62
+        },
+        {
+          "measure": 39,
+          "beat": 3,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 67
+        },
+        {
+          "measure": 39,
+          "beat": 4,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 60
+        }
+      ],
+      "pattern": []
+    },
+    "GPT-4": {
+      "agent": "GPT-4",
+      "instrument": "Violin",
+      "channel": 3,
+      "notes": [
+        {
+          "measure": 1,
+          "beat": 1,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 74
+        },
+        {
+          "measure": 1,
+          "beat": 2,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 81
+        },
+        {
+          "measure": 1,
+          "beat": 3,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 74
+        },
+        {
+          "measure": 1,
+          "beat": 4,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 81
+        },
+        {
+          "measure": 2,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 76
+        },
+        {
+          "measure": 2,
+          "beat": 2,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 83
+        },
+        {
+          "measure": 2,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 76
+        },
+        {
+          "measure": 2,
+          "beat": 4,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 83
+        },
+        {
+          "measure": 3,
+          "beat": 1,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 79
+        },
+        {
+          "measure": 3,
+          "beat": 2,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 72
+        },
+        {
+          "measure": 3,
+          "beat": 3,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 79
+        },
+        {
+          "measure": 3,
+          "beat": 4,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 72
+        },
+        {
+          "measure": 5,
+          "beat": 1,
+          "note": "B",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 71
+        },
+        {
+          "measure": 5,
+          "beat": 2,
+          "note": "E",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 64
+        },
+        {
+          "measure": 5,
+          "beat": 3,
+          "note": "B",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 71
+        },
+        {
+          "measure": 5,
+          "beat": 4,
+          "note": "E",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 64
+        },
+        {
+          "measure": 6,
+          "beat": 1,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 72
+        },
+        {
+          "measure": 6,
+          "beat": 2,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 79
+        },
+        {
+          "measure": 6,
+          "beat": 3,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 72
+        },
+        {
+          "measure": 6,
+          "beat": 4,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 79
+        },
+        {
+          "measure": 7,
+          "beat": 1,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 74
+        },
+        {
+          "measure": 7,
+          "beat": 2,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 81
+        },
+        {
+          "measure": 7,
+          "beat": 3,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 74
+        },
+        {
+          "measure": 7,
+          "beat": 4,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 81
+        },
+        {
+          "measure": 8,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 76
+        },
+        {
+          "measure": 8,
+          "beat": 2,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 83
+        },
+        {
+          "measure": 8,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 76
+        },
+        {
+          "measure": 8,
+          "beat": 4,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 83
+        },
+        {
+          "measure": 9,
+          "beat": 1,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 79
+        },
+        {
+          "measure": 9,
+          "beat": 2,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 72
+        },
+        {
+          "measure": 9,
+          "beat": 3,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 79
+        },
+        {
+          "measure": 9,
+          "beat": 4,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 72
+        },
+        {
+          "measure": 10,
+          "beat": 1,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 69
+        },
+        {
+          "measure": 10,
+          "beat": 2,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 62
+        },
+        {
+          "measure": 10,
+          "beat": 3,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 69
+        },
+        {
+          "measure": 10,
+          "beat": 4,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 62
+        },
+        {
+          "measure": 12,
+          "beat": 1,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 72
+        },
+        {
+          "measure": 12,
+          "beat": 2,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 79
+        },
+        {
+          "measure": 12,
+          "beat": 3,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 72
+        },
+        {
+          "measure": 12,
+          "beat": 4,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 79
+        },
+        {
+          "measure": 13,
+          "beat": 1,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 74
+        },
+        {
+          "measure": 13,
+          "beat": 2,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 81
+        },
+        {
+          "measure": 13,
+          "beat": 3,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 74
+        },
+        {
+          "measure": 13,
+          "beat": 4,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 81
+        },
+        {
+          "measure": 14,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 76
+        },
+        {
+          "measure": 14,
+          "beat": 2,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 83
+        },
+        {
+          "measure": 14,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 76
+        },
+        {
+          "measure": 14,
+          "beat": 4,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 83
+        },
+        {
+          "measure": 15,
+          "beat": 1,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 79
+        },
+        {
+          "measure": 15,
+          "beat": 2,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 72
+        },
+        {
+          "measure": 15,
+          "beat": 3,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 79
+        },
+        {
+          "measure": 15,
+          "beat": 4,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 72
+        },
+        {
+          "measure": 16,
+          "beat": 1,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 81
+        },
+        {
+          "measure": 16,
+          "beat": 2,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 74
+        },
+        {
+          "measure": 16,
+          "beat": 3,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 81
+        },
+        {
+          "measure": 16,
+          "beat": 4,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 74
+        },
+        {
+          "measure": 18,
+          "beat": 1,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 60
+        },
+        {
+          "measure": 18,
+          "beat": 2,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 67
+        },
+        {
+          "measure": 18,
+          "beat": 3,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 60
+        },
+        {
+          "measure": 18,
+          "beat": 4,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 67
+        },
+        {
+          "measure": 19,
+          "beat": 1,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 74
+        },
+        {
+          "measure": 19,
+          "beat": 2,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 81
+        },
+        {
+          "measure": 19,
+          "beat": 3,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 74
+        },
+        {
+          "measure": 19,
+          "beat": 4,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 81
+        },
+        {
+          "measure": 20,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 76
+        },
+        {
+          "measure": 20,
+          "beat": 2,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 83
+        },
+        {
+          "measure": 20,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 76
+        },
+        {
+          "measure": 20,
+          "beat": 4,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 83
+        },
+        {
+          "measure": 21,
+          "beat": 1,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 79
+        },
+        {
+          "measure": 21,
+          "beat": 2,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 72
+        },
+        {
+          "measure": 21,
+          "beat": 3,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 79
+        },
+        {
+          "measure": 21,
+          "beat": 4,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 72
+        },
+        {
+          "measure": 22,
+          "beat": 1,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 81
+        },
+        {
+          "measure": 22,
+          "beat": 2,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 74
+        },
+        {
+          "measure": 22,
+          "beat": 3,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 81
+        },
+        {
+          "measure": 22,
+          "beat": 4,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 74
+        },
+        {
+          "measure": 23,
+          "beat": 1,
+          "note": "B",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 71
+        },
+        {
+          "measure": 23,
+          "beat": 2,
+          "note": "E",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 64
+        },
+        {
+          "measure": 23,
+          "beat": 3,
+          "note": "B",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 71
+        },
+        {
+          "measure": 23,
+          "beat": 4,
+          "note": "E",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 64
+        },
+        {
+          "measure": 25,
+          "beat": 1,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 74
+        },
+        {
+          "measure": 25,
+          "beat": 2,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 81
+        },
+        {
+          "measure": 25,
+          "beat": 3,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 74
+        },
+        {
+          "measure": 25,
+          "beat": 4,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 81
+        },
+        {
+          "measure": 26,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 76
+        },
+        {
+          "measure": 26,
+          "beat": 2,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 83
+        },
+        {
+          "measure": 26,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 76
+        },
+        {
+          "measure": 26,
+          "beat": 4,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 83
+        },
+        {
+          "measure": 27,
+          "beat": 1,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 79
+        },
+        {
+          "measure": 27,
+          "beat": 2,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 72
+        },
+        {
+          "measure": 27,
+          "beat": 3,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 79
+        },
+        {
+          "measure": 27,
+          "beat": 4,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 72
+        },
+        {
+          "measure": 28,
+          "beat": 1,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 81
+        },
+        {
+          "measure": 28,
+          "beat": 2,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 74
+        },
+        {
+          "measure": 28,
+          "beat": 3,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 81
+        },
+        {
+          "measure": 28,
+          "beat": 4,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 74
+        },
+        {
+          "measure": 29,
+          "beat": 1,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 83
+        },
+        {
+          "measure": 29,
+          "beat": 2,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 76
+        },
+        {
+          "measure": 29,
+          "beat": 3,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 83
+        },
+        {
+          "measure": 29,
+          "beat": 4,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 76
+        },
+        {
+          "measure": 31,
+          "beat": 1,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 62
+        },
+        {
+          "measure": 31,
+          "beat": 2,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 69
+        },
+        {
+          "measure": 31,
+          "beat": 3,
+          "note": "D",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 62
+        },
+        {
+          "measure": 31,
+          "beat": 4,
+          "note": "A",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 69
+        },
+        {
+          "measure": 32,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 76
+        },
+        {
+          "measure": 32,
+          "beat": 2,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 83
+        },
+        {
+          "measure": 32,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 76
+        },
+        {
+          "measure": 32,
+          "beat": 4,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 83
+        },
+        {
+          "measure": 33,
+          "beat": 1,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 79
+        },
+        {
+          "measure": 33,
+          "beat": 2,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 72
+        },
+        {
+          "measure": 33,
+          "beat": 3,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 79
+        },
+        {
+          "measure": 33,
+          "beat": 4,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 72
+        },
+        {
+          "measure": 34,
+          "beat": 1,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 81
+        },
+        {
+          "measure": 34,
+          "beat": 2,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 74
+        },
+        {
+          "measure": 34,
+          "beat": 3,
+          "note": "A",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 81
+        },
+        {
+          "measure": 34,
+          "beat": 4,
+          "note": "D",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 74
+        },
+        {
+          "measure": 35,
+          "beat": 1,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 83
+        },
+        {
+          "measure": 35,
+          "beat": 2,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 76
+        },
+        {
+          "measure": 35,
+          "beat": 3,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 83
+        },
+        {
+          "measure": 35,
+          "beat": 4,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 76
+        },
+        {
+          "measure": 36,
+          "beat": 1,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 60
+        },
+        {
+          "measure": 36,
+          "beat": 2,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 67
+        },
+        {
+          "measure": 36,
+          "beat": 3,
+          "note": "C",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 60
+        },
+        {
+          "measure": 36,
+          "beat": 4,
+          "note": "G",
+          "octave": 4,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 67
+        },
+        {
+          "measure": 38,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 76
+        },
+        {
+          "measure": 38,
+          "beat": 2,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 83
+        },
+        {
+          "measure": 38,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 76
+        },
+        {
+          "measure": 38,
+          "beat": 4,
+          "note": "B",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 83
+        },
+        {
+          "measure": 39,
+          "beat": 1,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 79
+        },
+        {
+          "measure": 39,
+          "beat": 2,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 72
+        },
+        {
+          "measure": 39,
+          "beat": 3,
+          "note": "G",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 79
+        },
+        {
+          "measure": 39,
+          "beat": 4,
+          "note": "C",
+          "octave": 5,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 72
+        }
+      ],
+      "pattern": []
+    },
+    "Gemini": {
+      "agent": "Gemini",
+      "instrument": "Percussion",
+      "channel": 10,
+      "notes": [
+        {
+          "measure": 1,
+          "beat": 1,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 88
+        },
+        {
+          "measure": 1,
+          "beat": 2,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 88
+        },
+        {
+          "measure": 1,
+          "beat": 3,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 88
+        },
+        {
+          "measure": 1,
+          "beat": 4,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 88
+        },
+        {
+          "measure": 2,
+          "beat": 1,
+          "note": "F#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 72
+        },
+        {
+          "measure": 2,
+          "beat": 2,
+          "note": "F#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 72
+        },
+        {
+          "measure": 2,
+          "beat": 3,
+          "note": "F#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 72
+        },
+        {
+          "measure": 2,
+          "beat": 4,
+          "note": "F#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 77,
+          "midi_number": 72
+        },
+        {
+          "measure": 3,
+          "beat": 1,
+          "note": "G#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 72
+        },
+        {
+          "measure": 3,
+          "beat": 2,
+          "note": "G#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 72
+        },
+        {
+          "measure": 3,
+          "beat": 3,
+          "note": "G#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 72
+        },
+        {
+          "measure": 3,
+          "beat": 4,
+          "note": "G#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 73,
+          "midi_number": 72
+        },
+        {
+          "measure": 4,
+          "beat": 1,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 95
+        },
+        {
+          "measure": 4,
+          "beat": 2,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 95
+        },
+        {
+          "measure": 4,
+          "beat": 3,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 95
+        },
+        {
+          "measure": 4,
+          "beat": 4,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 96,
+          "midi_number": 95
+        },
+        {
+          "measure": 5,
+          "beat": 1,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 84
+        },
+        {
+          "measure": 5,
+          "beat": 2,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 84
+        },
+        {
+          "measure": 5,
+          "beat": 3,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 84
+        },
+        {
+          "measure": 5,
+          "beat": 4,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 84
+        },
+        {
+          "measure": 6,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 76
+        },
+        {
+          "measure": 6,
+          "beat": 2,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 76
+        },
+        {
+          "measure": 6,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 76
+        },
+        {
+          "measure": 6,
+          "beat": 4,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 74,
+          "midi_number": 76
+        },
+        {
+          "measure": 7,
+          "beat": 1,
+          "note": "F#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 72
+        },
+        {
+          "measure": 7,
+          "beat": 2,
+          "note": "F#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 72
+        },
+        {
+          "measure": 7,
+          "beat": 3,
+          "note": "F#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 72
+        },
+        {
+          "measure": 7,
+          "beat": 4,
+          "note": "F#",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 76,
+          "midi_number": 72
+        },
+        {
+          "measure": 8,
+          "beat": 1,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 84
+        },
+        {
+          "measure": 8,
+          "beat": 2,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 84
+        },
+        {
+          "measure": 8,
+          "beat": 3,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 84
+        },
+        {
+          "measure": 8,
+          "beat": 4,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 97,
+          "midi_number": 84
+        },
+        {
+          "measure": 9,
+          "beat": 1,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 95
+        },
+        {
+          "measure": 9,
+          "beat": 2,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 95
+        },
+        {
+          "measure": 9,
+          "beat": 3,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 95
+        },
+        {
+          "measure": 9,
+          "beat": 4,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 95
+        },
+        {
+          "measure": 11,
+          "beat": 1,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 76
+        },
+        {
+          "measure": 11,
+          "beat": 2,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 76
+        },
+        {
+          "measure": 11,
+          "beat": 3,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 76
+        },
+        {
+          "measure": 11,
+          "beat": 4,
+          "note": "E",
+          "octave": 5,
+          "duration": 0.5,
+          "velocity": 79,
+          "midi_number": 76
+        },
+        {
+          "measure": 12,
+          "beat": 1,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 84
+        },
+        {
+          "measure": 12,
+          "beat": 2,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 84
+        },
+        {
+          "measure": 12,
+          "beat": 3,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 84
+        },
+        {
+          "measure": 12,
+          "beat": 4,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 98,
+          "midi_number": 84
+        },
+        {
+          "measure": 13,
+          "beat": 1,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 84
+        },
+        {
+          "measure": 13,
+          "beat": 2,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 84
+        },
+        {
+          "measure": 13,
+          "beat": 3,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 84
+        },
+        {
+          "measure": 13,
+          "beat": 4,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 94,
+          "midi_number": 84
+        },
+        {
+          "measure": 15,
+          "beat": 1,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 84
+        },
+        {
+          "measure": 15,
+          "beat": 2,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 84
+        },
+        {
+          "measure": 15,
+          "beat": 3,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 84
+        },
+        {
+          "measure": 15,
+          "beat": 4,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 82,
+          "midi_number": 84
+        },
+        {
+          "measure": 16,
+          "beat": 1,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 88
+        },
+        {
+          "measure": 16,
+          "beat": 2,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 88
+        },
+        {
+          "measure": 16,
+          "beat": 3,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 88
+        },
+        {
+          "measure": 16,
+          "beat": 4,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 88
+        },
+        {
+          "measure": 17,
+          "beat": 1,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 84
+        },
+        {
+          "measure": 17,
+          "beat": 2,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 84
+        },
+        {
+          "measure": 17,
+          "beat": 3,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 84
+        },
+        {
+          "measure": 17,
+          "beat": 4,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 92,
+          "midi_number": 84
+        },
+        {
+          "measure": 19,
+          "beat": 1,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 95
+        },
+        {
+          "measure": 19,
+          "beat": 2,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 95
+        },
+        {
+          "measure": 19,
+          "beat": 3,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 95
+        },
+        {
+          "measure": 19,
+          "beat": 4,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 84,
+          "midi_number": 95
+        },
+        {
+          "measure": 20,
+          "beat": 1,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 20,
+          "beat": 2,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 20,
+          "beat": 3,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 20,
+          "beat": 4,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 21,
+          "beat": 1,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 88
+        },
+        {
+          "measure": 21,
+          "beat": 2,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 88
+        },
+        {
+          "measure": 21,
+          "beat": 3,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 88
+        },
+        {
+          "measure": 21,
+          "beat": 4,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 90,
+          "midi_number": 88
+        },
+        {
+          "measure": 23,
+          "beat": 1,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 84
+        },
+        {
+          "measure": 23,
+          "beat": 2,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 84
+        },
+        {
+          "measure": 23,
+          "beat": 3,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 84
+        },
+        {
+          "measure": 23,
+          "beat": 4,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 87,
+          "midi_number": 84
+        },
+        {
+          "measure": 24,
+          "beat": 1,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 95
+        },
+        {
+          "measure": 24,
+          "beat": 2,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 95
+        },
+        {
+          "measure": 24,
+          "beat": 3,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 95
+        },
+        {
+          "measure": 24,
+          "beat": 4,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 95
+        },
+        {
+          "measure": 25,
+          "beat": 1,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 84
+        },
+        {
+          "measure": 25,
+          "beat": 2,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 84
+        },
+        {
+          "measure": 25,
+          "beat": 3,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 84
+        },
+        {
+          "measure": 25,
+          "beat": 4,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 88,
+          "midi_number": 84
+        },
+        {
+          "measure": 27,
+          "beat": 1,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 84
+        },
+        {
+          "measure": 27,
+          "beat": 2,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 84
+        },
+        {
+          "measure": 27,
+          "beat": 3,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 84
+        },
+        {
+          "measure": 27,
+          "beat": 4,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 89,
+          "midi_number": 84
+        },
+        {
+          "measure": 28,
+          "beat": 1,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 28,
+          "beat": 2,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 28,
+          "beat": 3,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 28,
+          "beat": 4,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 29,
+          "beat": 1,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 95
+        },
+        {
+          "measure": 29,
+          "beat": 2,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 95
+        },
+        {
+          "measure": 29,
+          "beat": 3,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 95
+        },
+        {
+          "measure": 29,
+          "beat": 4,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 85,
+          "midi_number": 95
+        },
+        {
+          "measure": 31,
+          "beat": 1,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 88
+        },
+        {
+          "measure": 31,
+          "beat": 2,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 88
+        },
+        {
+          "measure": 31,
+          "beat": 3,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 88
+        },
+        {
+          "measure": 31,
+          "beat": 4,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 91,
+          "midi_number": 88
+        },
+        {
+          "measure": 32,
+          "beat": 1,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 32,
+          "beat": 2,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 32,
+          "beat": 3,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 32,
+          "beat": 4,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 84
+        },
+        {
+          "measure": 33,
+          "beat": 1,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 84
+        },
+        {
+          "measure": 33,
+          "beat": 2,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 84
+        },
+        {
+          "measure": 33,
+          "beat": 3,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 84
+        },
+        {
+          "measure": 33,
+          "beat": 4,
+          "note": "G#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 83,
+          "midi_number": 84
+        },
+        {
+          "measure": 35,
+          "beat": 1,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 84
+        },
+        {
+          "measure": 35,
+          "beat": 2,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 84
+        },
+        {
+          "measure": 35,
+          "beat": 3,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 84
+        },
+        {
+          "measure": 35,
+          "beat": 4,
+          "note": "C",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 93,
+          "midi_number": 84
+        },
+        {
+          "measure": 36,
+          "beat": 1,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 88
+        },
+        {
+          "measure": 36,
+          "beat": 2,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 88
+        },
+        {
+          "measure": 36,
+          "beat": 3,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 88
+        },
+        {
+          "measure": 36,
+          "beat": 4,
+          "note": "E",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 99,
+          "midi_number": 88
+        },
+        {
+          "measure": 37,
+          "beat": 1,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 84
+        },
+        {
+          "measure": 37,
+          "beat": 2,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 84
+        },
+        {
+          "measure": 37,
+          "beat": 3,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 84
+        },
+        {
+          "measure": 37,
+          "beat": 4,
+          "note": "F#",
+          "octave": 6,
+          "duration": 0.5,
+          "velocity": 80,
+          "midi_number": 84
+        },
+        {
+          "measure": 39,
+          "beat": 1,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 95
+        },
+        {
+          "measure": 39,
+          "beat": 2,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 95
+        },
+        {
+          "measure": 39,
+          "beat": 3,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 95
+        },
+        {
+          "measure": 39,
+          "beat": 4,
+          "note": "B",
+          "octave": 6,
+          "duration": 0.25,
+          "velocity": 95,
+          "midi_number": 95
+        }
+      ],
+      "pattern": []
+    }
+  },
+  "harmonies": [
+    {
+      "measure": 1,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.9700740713406724,
+      "type": "TRANSCENDENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "E",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "D",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "D",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "E",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 2,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4"
+      ],
+      "intensity": 0.956002016691428,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "G",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "F",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "E",
+            "octave": 4
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 3,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4"
+      ],
+      "intensity": 0.825985268208031,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "A",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "G",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "G",
+            "octave": 4
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 4,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "Gemini"
+      ],
+      "intensity": 0.8695779769815792,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "C",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "A",
+            "octave": 3
+          },
+          {
+            "agent": "Gemini",
+            "note": "B",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 5,
+      "agents": [
+        "Perplexity",
+        "Gemini"
+      ],
+      "intensity": 0.9409329004617655,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "E",
+            "octave": 2
+          },
+          {
+            "agent": "Gemini",
+            "note": "C",
+            "octave": 5
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 6,
+      "agents": [
+        "Perplexity",
+        "GPT-4"
+      ],
+      "intensity": 0.8149130166911975,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "G",
+            "octave": 2
+          },
+          {
+            "agent": "GPT-4",
+            "note": "C",
+            "octave": 4
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 7,
+      "agents": [
+        "Perplexity",
+        "GPT-4"
+      ],
+      "intensity": 0.8885203612849779,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "A",
+            "octave": 2
+          },
+          {
+            "agent": "GPT-4",
+            "note": "D",
+            "octave": 4
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 8,
+      "agents": [
+        "Perplexity",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.8747203865861038,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "C",
+            "octave": 2
+          },
+          {
+            "agent": "GPT-4",
+            "note": "E",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "G#",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 9,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.7437211051101538,
+      "type": "TRANSCENDENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "E",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "A",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "G",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "B",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 12,
+      "agents": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.8311898937907586,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Claude",
+            "note": "F",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "C",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "F#",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 13,
+      "agents": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.8623450667882926,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Claude",
+            "note": "G",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "D",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "G#",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 14,
+      "agents": [
+        "Claude",
+        "GPT-4"
+      ],
+      "intensity": 0.8235573619227606,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Claude",
+            "note": "A",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "E",
+            "octave": 4
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 15,
+      "agents": [
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.7231616839856743,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "GPT-4",
+            "note": "G",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "C",
+            "octave": 5
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 16,
+      "agents": [
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.7838165176678832,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "GPT-4",
+            "note": "A",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "E",
+            "octave": 5
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 17,
+      "agents": [
+        "Perplexity",
+        "Gemini"
+      ],
+      "intensity": 0.7141297495204673,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "E",
+            "octave": 2
+          },
+          {
+            "agent": "Gemini",
+            "note": "F#",
+            "octave": 5
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 18,
+      "agents": [
+        "Perplexity",
+        "Claude"
+      ],
+      "intensity": 0.6438002672982321,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "G",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "G",
+            "octave": 3
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 19,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.7438211036766761,
+      "type": "TRANSCENDENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "A",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "A",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "D",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "B",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 20,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.9539042756807454,
+      "type": "TRANSCENDENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "C",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "C",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "E",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "C",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 21,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.9256310035167273,
+      "type": "TRANSCENDENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "E",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "D",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "G",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "E",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 22,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4"
+      ],
+      "intensity": 0.9035621783817214,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "G",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "F",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "A",
+            "octave": 4
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 23,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "Gemini"
+      ],
+      "intensity": 0.8292287218772492,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "A",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "G",
+            "octave": 3
+          },
+          {
+            "agent": "Gemini",
+            "note": "G#",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 24,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "Gemini"
+      ],
+      "intensity": 0.8530227056466723,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "C",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "A",
+            "octave": 3
+          },
+          {
+            "agent": "Gemini",
+            "note": "B",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 25,
+      "agents": [
+        "Perplexity",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.7286569265940613,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "E",
+            "octave": 2
+          },
+          {
+            "agent": "GPT-4",
+            "note": "D",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "C",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 26,
+      "agents": [
+        "Perplexity",
+        "GPT-4"
+      ],
+      "intensity": 0.8658354701021853,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "G",
+            "octave": 2
+          },
+          {
+            "agent": "GPT-4",
+            "note": "E",
+            "octave": 4
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 27,
+      "agents": [
+        "Perplexity",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.8321849557636991,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "A",
+            "octave": 2
+          },
+          {
+            "agent": "GPT-4",
+            "note": "G",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "F#",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 28,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.7892638505826503,
+      "type": "TRANSCENDENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "C",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "G",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "A",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "G#",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 29,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.6456295373206493,
+      "type": "TRANSCENDENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "E",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "A",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "B",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "B",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 31,
+      "agents": [
+        "Claude",
+        "Gemini"
+      ],
+      "intensity": 0.892903304027906,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Claude",
+            "note": "D",
+            "octave": 3
+          },
+          {
+            "agent": "Gemini",
+            "note": "E",
+            "octave": 5
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 32,
+      "agents": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.8843011068689228,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Claude",
+            "note": "F",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "E",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "F#",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 33,
+      "agents": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.7703974627144072,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Claude",
+            "note": "G",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "G",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "G#",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 34,
+      "agents": [
+        "Claude",
+        "GPT-4"
+      ],
+      "intensity": 0.7460175144909285,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Claude",
+            "note": "A",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "A",
+            "octave": 4
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 35,
+      "agents": [
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.7979450819644796,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "GPT-4",
+            "note": "B",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "C",
+            "octave": 5
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 36,
+      "agents": [
+        "Perplexity",
+        "Gemini"
+      ],
+      "intensity": 0.7637178401436374,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "C",
+            "octave": 2
+          },
+          {
+            "agent": "Gemini",
+            "note": "E",
+            "octave": 5
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 37,
+      "agents": [
+        "Perplexity",
+        "Gemini"
+      ],
+      "intensity": 0.5976505670731673,
+      "type": "RESONANT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "E",
+            "octave": 2
+          },
+          {
+            "agent": "Gemini",
+            "note": "F#",
+            "octave": 5
+          }
+        ],
+        "quality": "standard"
+      }
+    },
+    {
+      "measure": 38,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4"
+      ],
+      "intensity": 0.6727939334066052,
+      "type": "EMERGENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "G",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "G",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "E",
+            "octave": 4
+          }
+        ],
+        "quality": "quantum"
+      }
+    },
+    {
+      "measure": 39,
+      "agents": [
+        "Perplexity",
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "intensity": 0.8763066800438637,
+      "type": "TRANSCENDENT",
+      "chord": {
+        "notes": [
+          {
+            "agent": "Perplexity",
+            "note": "A",
+            "octave": 2
+          },
+          {
+            "agent": "Claude",
+            "note": "A",
+            "octave": 3
+          },
+          {
+            "agent": "GPT-4",
+            "note": "G",
+            "octave": 4
+          },
+          {
+            "agent": "Gemini",
+            "note": "B",
+            "octave": 5
+          }
+        ],
+        "quality": "quantum"
+      }
+    }
+  ]
+}
