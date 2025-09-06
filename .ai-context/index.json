@@ -1,0 +1,15 @@
+{
+  "head": "ba56dde80eb8d61b",
+  "entries": [
+    {
+      "session_id": "ba56dde80eb8d61b",
+      "timestamp": "2025-09-06T08:28:02.774339",
+      "parent": null,
+      "path": "snapshots/delta_ba56dde80eb8d61b.json"
+    }
+  ],
+  "policies": {
+    "retention_days": 30,
+    "compression": "delta+gzip"
+  }
+}
