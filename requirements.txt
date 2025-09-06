@@ -1,7 +1,2 @@
-Flask==3.0.0
-Flask-CORS==4.0.0
+Flask==2.3.3
 gunicorn==21.2.0
-Werkzeug==3.0.1
-numpy>=1.24.0
-asyncio-mqtt>=0.16.1
-aiofiles>=23.0.0
