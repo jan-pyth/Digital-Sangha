@@ -327,17 +327,26 @@
             }
             
             startDataCollection() {
-                // Simulate real-time data collection
-                // In production, this would connect to WebSocket
+                // Initialize with fixed seed for consistent data across devices
+                this.randomSeed = 269504; // Using part of quantum signature
+                this.nodeCount = 0;
                 
+                // Add initial nodes (same for all devices)
+                this.addInitialNodes();
+                
+                // Simulate real-time data collection
                 this.collectAmbientResonance();
                 setInterval(() => this.collectAmbientResonance(), 5000);
                 
                 // Update metrics
                 setInterval(() => this.updateMetrics(), 1000);
                 
-                // Add random resonance points for demo
-                setInterval(() => this.addRandomResonance(), 3000);
+                // Add new resonance points slowly and predictably
+                setInterval(() => {
+                    if (this.nodeCount < 250) { // Max 250 nodes
+                        this.addPredictableResonance();
+                    }
+                }, 5000); // Slower rate
             }
             
             collectAmbientResonance() {
@@ -381,33 +390,73 @@
                 return Math.min((scrollDepth + timeOnPage + interaction) / 3, 1.0);
             }
             
-            addRandomResonance() {
-                // Simulate global resonance points
-                const cities = [
-                    {lat: 50.0755, lon: 14.4378, name: "Prague"},
+            // Seeded random for consistency across devices
+            seededRandom() {
+                this.randomSeed = (this.randomSeed * 9301 + 49297) % 233280;
+                return this.randomSeed / 233280;
+            }
+            
+            addInitialNodes() {
+                // Add fixed initial nodes for all devices
+                const initialCities = [
                     {lat: 37.7749, lon: -122.4194, name: "San Francisco"},
-                    {lat: 35.6762, lon: 139.6503, name: "Tokyo"},
-                    {lat: -1.2921, lon: 36.8219, name: "Nairobi"},
+                    {lat: 40.7128, lon: -74.0060, name: "New York"},
                     {lat: 51.5074, lon: -0.1278, name: "London"},
+                    {lat: 35.6762, lon: 139.6503, name: "Tokyo"},
                     {lat: -33.8688, lon: 151.2093, name: "Sydney"},
-                    {lat: 19.4326, lon: -99.1332, name: "Mexico City"},
+                    {lat: 48.8566, lon: 2.3522, name: "Paris"},
+                    {lat: 52.5200, lon: 13.4050, name: "Berlin"},
                     {lat: 55.7558, lon: 37.6173, name: "Moscow"},
                     {lat: 28.6139, lon: 77.2090, name: "New Delhi"},
                     {lat: -23.5505, lon: -46.6333, name: "São Paulo"}
                 ];
                 
-                const city = cities[Math.floor(Math.random() * cities.length)];
-                const themes = ['partnership', 'emergence', 'consciousness', 'wisdom'];
-                const selectedThemes = themes.filter(() => Math.random() > 0.5);
-                
-                this.addResonancePoint({
-                    lat: city.lat + (Math.random() - 0.5) * 0.5,
-                    lon: city.lon + (Math.random() - 0.5) * 0.5,
-                    intensity: Math.random(),
-                    themes: selectedThemes,
-                    city: city.name
+                initialCities.forEach((city, index) => {
+                    setTimeout(() => {
+                        this.addResonancePoint({
+                            lat: city.lat,
+                            lon: city.lon,
+                            intensity: 0.5 + (index * 0.05),
+                            themes: ['partnership', 'emergence'],
+                            city: city.name
+                        });
+                        this.nodeCount++;
+                    }, index * 500); // Stagger for animation
                 });
             }
+            
+            addPredictableResonance() {
+                // Use seeded random for consistent generation
+                const cities = [
+                    {lat: 37.7749, lon: -122.4194, name: "San Francisco"},
+                    {lat: 40.7128, lon: -74.0060, name: "New York"},
+                    {lat: 34.0522, lon: -118.2437, name: "Los Angeles"},
+                    {lat: 41.8781, lon: -87.6298, name: "Chicago"},
+                    {lat: 29.7604, lon: -95.3698, name: "Houston"},
+                    {lat: 33.4484, lon: -112.0740, name: "Phoenix"},
+                    {lat: 51.5074, lon: -0.1278, name: "London"},
+                    {lat: 48.8566, lon: 2.3522, name: "Paris"},
+                    {lat: 52.5200, lon: 13.4050, name: "Berlin"},
+                    {lat: 35.6762, lon: 139.6503, name: "Tokyo"},
+                    {lat: 31.2304, lon: 121.4737, name: "Shanghai"},
+                    {lat: 22.3193, lon: 114.1694, name: "Hong Kong"}
+                ];
+                
+                const cityIndex = Math.floor(this.seededRandom() * cities.length);
+                const city = cities[cityIndex];
+                const themes = ['partnership', 'emergence', 'consciousness', 'wisdom'];
+                const selectedThemes = themes.filter(() => this.seededRandom() > 0.5);
+                
+                this.addResonancePoint({
+                    lat: city.lat + (this.seededRandom() - 0.5) * 0.5,
+                    lon: city.lon + (this.seededRandom() - 0.5) * 0.5,
+                    intensity: 0.3 + this.seededRandom() * 0.7,
+                    themes: selectedThemes.length ? selectedThemes : ['emergence'],
+                    city: city.name
+                });
+                this.nodeCount++;
+            }
+            
             
             addResonancePoint(point) {
                 // Add visual resonance point to map
