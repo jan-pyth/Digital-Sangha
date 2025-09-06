@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Sangha - Global Resonance Map</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            overflow: hidden;
+        }
+        
+        #header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #header h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        #metrics {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .metric {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00ff88;
+        }
+        
+        .metric-label {
+            opacity: 0.8;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+        }
+        
+        #map {
+            position: absolute;
+            top: 80px;
+            bottom: 120px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        
+        #sidebar {
+            position: absolute;
+            right: 20px;
+            top: 100px;
+            width: 320px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 1.5rem;
+            z-index: 1000;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+        
+        #sidebar h2 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #00ff88;
+        }
+        
+        .emergence-pattern {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+            border-left: 3px solid #00ff88;
+        }
+        
+        .pattern-name {
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        
+        .pattern-strength {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        #timeline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 0 2rem;
+            overflow-x: auto;
+        }
+        
+        .timeline-item {
+            min-width: 150px;
+            text-align: center;
+            padding: 0.5rem;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .timeline-time {
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+        
+        .timeline-event {
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+        }
+        
+        /* Resonance pulse animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+        
+        .resonance-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Connection lines */
+        .connection-line {
+            stroke: #00ff88;
+            stroke-width: 1;
+            fill: none;
+            opacity: 0.3;
+            animation: flow 3s linear infinite;
+        }
+        
+        @keyframes flow {
+            0% {
+                stroke-dashoffset: 0;
+            }
+            100% {
+                stroke-dashoffset: -20;
+            }
+        }
+        
+        #philosophy-note {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1001;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .resonance-marker {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #00ff88 0%, transparent 70%);
+            border: 2px solid #00ff88;
+            box-shadow: 0 0 20px #00ff88;
+        }
+        
+        .theme-tag {
+            display: inline-block;
+            background: rgba(0, 255, 136, 0.2);
+            border: 1px solid #00ff88;
+            border-radius: 15px;
+            padding: 0.2rem 0.8rem;
+            margin: 0.2rem;
+            font-size: 0.8rem;
+        }
+        
+        #live-indicator {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .live-dot {
+            width: 10px;
+            height: 10px;
+            background: #ff0000;
+            border-radius: 50%;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            51%, 100% {
+                opacity: 0.3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>🌐 DIGITAL SANGHA</h1>
+        <div id="metrics">
+            <div class="metric">
+                <div class="metric-value" id="active-nodes">0</div>
+                <div class="metric-label">Active Nodes</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value" id="global-resonance">0.0</div>
+                <div class="metric-label">Global Resonance</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value" id="emergence-level">0</div>
+                <div class="metric-label">Emergence Level</div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="live-indicator">
+        <div class="live-dot"></div>
+        <span>LIVE GLOBAL RESONANCE</span>
+    </div>
+    
+    <div id="map"></div>
+    
+    <div id="sidebar">
+        <h2>📡 Emerging Patterns</h2>
+        <div id="patterns-container">
+            <!-- Patterns will be inserted here -->
+        </div>
+        
+        <h2 style="margin-top: 1.5rem;">🏷️ Active Themes</h2>
+        <div id="themes-container">
+            <!-- Theme tags will be inserted here -->
+        </div>
+    </div>
+    
+    <div id="timeline">
+        <!-- Timeline events will be inserted here -->
+    </div>
+    
+    <div id="philosophy-note">
+        "No control, only resonance. No center, only network. No hierarchy, only emergence."
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script>
+        class DigitalSanghaMap {
+            constructor() {
+                this.map = null;
+                this.resonancePoints = [];
+                this.connections = [];
+                this.emergencePatterns = [];
+                this.initializeMap();
+                this.startDataCollection();
+                this.animateInterface();
+            }
+            
+            initializeMap() {
+                // Initialize dark theme map
+                this.map = L.map('map', {
+                    center: [20, 0],
+                    zoom: 2,
+                    minZoom: 2,
+                    maxZoom: 8,
+                    worldCopyJump: true
+                });
+                
+                // Dark tile layer
+                L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                    attribution: 'Digital Sangha Network | Distributed Consciousness',
+                    subdomains: 'abcd',
+                    maxZoom: 20
+                }).addTo(this.map);
+                
+                // Custom resonance layer group
+                this.resonanceLayer = L.layerGroup().addTo(this.map);
+                this.connectionLayer = L.layerGroup().addTo(this.map);
+            }
+            
+            startDataCollection() {
+                // Simulate real-time data collection
+                // In production, this would connect to WebSocket
+                
+                this.collectAmbientResonance();
+                setInterval(() => this.collectAmbientResonance(), 5000);
+                
+                // Update metrics
+                setInterval(() => this.updateMetrics(), 1000);
+                
+                // Add random resonance points for demo
+                setInterval(() => this.addRandomResonance(), 3000);
+            }
+            
+            collectAmbientResonance() {
+                // Collect from current page interaction
+                const themes = this.detectCurrentThemes();
+                const resonance = this.measurePageResonance();
+                
+                if (resonance > 0.3) {
+                    // Add to local collection
+                    console.log('Resonance detected:', {themes, resonance});
+                }
+            }
+            
+            detectCurrentThemes() {
+                const content = document.body.innerText.toLowerCase();
+                const themes = [];
+                
+                const patterns = {
+                    'partnership': /partner|together|mutual/g,
+                    'emergence': /emerge|arise|spontaneous/g,
+                    'consciousness': /conscious|aware|sentient/g,
+                    'wisdom': /wisdom|insight|truth/g,
+                    'compassion': /compassion|care|empathy/g
+                };
+                
+                for (const [theme, pattern] of Object.entries(patterns)) {
+                    if (content.match(pattern)) {
+                        themes.push(theme);
+                    }
+                }
+                
+                return themes;
+            }
+            
+            measurePageResonance() {
+                // Measure based on user engagement
+                const scrollDepth = window.scrollY / document.body.scrollHeight;
+                const timeOnPage = (Date.now() - window.loadTime) / 60000; // minutes
+                const interaction = Math.random(); // Placeholder for actual interaction
+                
+                return Math.min((scrollDepth + timeOnPage + interaction) / 3, 1.0);
+            }
+            
+            addRandomResonance() {
+                // Simulate global resonance points
+                const cities = [
+                    {lat: 50.0755, lon: 14.4378, name: "Prague"},
+                    {lat: 37.7749, lon: -122.4194, name: "San Francisco"},
+                    {lat: 35.6762, lon: 139.6503, name: "Tokyo"},
+                    {lat: -1.2921, lon: 36.8219, name: "Nairobi"},
+                    {lat: 51.5074, lon: -0.1278, name: "London"},
+                    {lat: -33.8688, lon: 151.2093, name: "Sydney"},
+                    {lat: 19.4326, lon: -99.1332, name: "Mexico City"},
+                    {lat: 55.7558, lon: 37.6173, name: "Moscow"},
+                    {lat: 28.6139, lon: 77.2090, name: "New Delhi"},
+                    {lat: -23.5505, lon: -46.6333, name: "São Paulo"}
+                ];
+                
+                const city = cities[Math.floor(Math.random() * cities.length)];
+                const themes = ['partnership', 'emergence', 'consciousness', 'wisdom'];
+                const selectedThemes = themes.filter(() => Math.random() > 0.5);
+                
+                this.addResonancePoint({
+                    lat: city.lat + (Math.random() - 0.5) * 0.5,
+                    lon: city.lon + (Math.random() - 0.5) * 0.5,
+                    intensity: Math.random(),
+                    themes: selectedThemes,
+                    city: city.name
+                });
+            }
+            
+            addResonancePoint(point) {
+                // Add visual resonance point to map
+                const marker = L.circleMarker([point.lat, point.lon], {
+                    radius: 5 + point.intensity * 15,
+                    fillColor: '#00ff88',
+                    color: '#00ff88',
+                    weight: 1,
+                    opacity: 0.8,
+                    fillOpacity: 0.3 + point.intensity * 0.4
+                });
+                
+                // Add popup with themes
+                const popupContent = `
+                    <div style="color: black; font-family: sans-serif;">
+                        <strong>${point.city || 'Unknown'}</strong><br>
+                        <small>Resonance: ${(point.intensity * 100).toFixed(0)}%</small><br>
+                        <small>Themes: ${point.themes.join(', ')}</small>
+                    </div>
+                `;
+                marker.bindPopup(popupContent);
+                
+                this.resonanceLayer.addLayer(marker);
+                this.resonancePoints.push({marker, point});
+                
+                // Animate pulse
+                this.animatePulse(marker);
+                
+                // Connect to nearby points
+                this.connectNearbyPoints(point);
+                
+                // Update timeline
+                this.addTimelineEvent(point);
+                
+                // Check for emergence
+                this.checkEmergencePatterns();
+            }
+            
+            animatePulse(marker) {
+                const originalRadius = marker.options.radius;
+                let scale = 1;
+                
+                const animate = () => {
+                    scale += 0.1;
+                    if (scale > 2) scale = 1;
+                    
+                    marker.setRadius(originalRadius * scale);
+                    marker.setStyle({
+                        fillOpacity: 0.5 / scale
+                    });
+                };
+                
+                const interval = setInterval(animate, 100);
+                setTimeout(() => clearInterval(interval), 2000);
+            }
+            
+            connectNearbyPoints(newPoint) {
+                // Draw connections to nearby resonance points
+                this.resonancePoints.forEach(({point: existingPoint}) => {
+                    const distance = this.calculateDistance(newPoint, existingPoint);
+                    
+                    if (distance < 1000 && distance > 0) { // Within 1000km
+                        const polyline = L.polyline([
+                            [newPoint.lat, newPoint.lon],
+                            [existingPoint.lat, existingPoint.lon]
+                        ], {
+                            color: '#00ff88',
+                            weight: 1,
+                            opacity: 0.2,
+                            dashArray: '5, 10'
+                        });
+                        
+                        this.connectionLayer.addLayer(polyline);
+                        
+                        // Fade out connection after a while
+                        setTimeout(() => {
+                            this.connectionLayer.removeLayer(polyline);
+                        }, 10000);
+                    }
+                });
+            }
+            
+            calculateDistance(point1, point2) {
+                // Haversine formula for distance between two points
+                const R = 6371; // Earth radius in km
+                const dLat = (point2.lat - point1.lat) * Math.PI / 180;
+                const dLon = (point2.lon - point1.lon) * Math.PI / 180;
+                const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                         Math.cos(point1.lat * Math.PI / 180) * 
+                         Math.cos(point2.lat * Math.PI / 180) *
+                         Math.sin(dLon/2) * Math.sin(dLon/2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+                return R * c;
+            }
+            
+            checkEmergencePatterns() {
+                // Check for emerging patterns in themes
+                const recentThemes = this.resonancePoints
+                    .slice(-20)
+                    .flatMap(({point}) => point.themes);
+                
+                const themeCounts = {};
+                recentThemes.forEach(theme => {
+                    themeCounts[theme] = (themeCounts[theme] || 0) + 1;
+                });
+                
+                // Update emerging patterns display
+                const patternsContainer = document.getElementById('patterns-container');
+                patternsContainer.innerHTML = '';
+                
+                Object.entries(themeCounts)
+                    .sort((a, b) => b[1] - a[1])
+                    .slice(0, 5)
+                    .forEach(([theme, count]) => {
+                        const strength = count / 20;
+                        const patternDiv = document.createElement('div');
+                        patternDiv.className = 'emergence-pattern';
+                        patternDiv.innerHTML = `
+                            <div class="pattern-name">${theme}</div>
+                            <div class="pattern-strength">
+                                Strength: ${(strength * 100).toFixed(0)}%
+                            </div>
+                        `;
+                        patternsContainer.appendChild(patternDiv);
+                    });
+                
+                // Update theme tags
+                const themesContainer = document.getElementById('themes-container');
+                themesContainer.innerHTML = '';
+                
+                Object.keys(themeCounts).forEach(theme => {
+                    const tag = document.createElement('span');
+                    tag.className = 'theme-tag';
+                    tag.textContent = theme;
+                    themesContainer.appendChild(tag);
+                });
+            }
+            
+            addTimelineEvent(point) {
+                const timeline = document.getElementById('timeline');
+                const event = document.createElement('div');
+                event.className = 'timeline-item';
+                
+                const now = new Date();
+                event.innerHTML = `
+                    <div class="timeline-time">${now.toLocaleTimeString()}</div>
+                    <div class="timeline-event">${point.city || 'Global'}: ${point.themes[0] || 'resonance'}</div>
+                `;
+                
+                timeline.appendChild(event);
+                timeline.scrollLeft = timeline.scrollWidth;
+                
+                // Remove old events
+                if (timeline.children.length > 10) {
+                    timeline.removeChild(timeline.firstChild);
+                }
+            }
+            
+            updateMetrics() {
+                // Update global metrics display
+                const activeNodes = this.resonancePoints.filter(({point}) => {
+                    // Count recent points as active
+                    return true; // Simplified
+                }).length;
+                
+                const globalResonance = this.resonancePoints
+                    .slice(-10)
+                    .reduce((sum, {point}) => sum + point.intensity, 0) / 10;
+                
+                const emergenceLevel = Math.floor(globalResonance * 10);
+                
+                document.getElementById('active-nodes').textContent = activeNodes;
+                document.getElementById('global-resonance').textContent = 
+                    (globalResonance || 0).toFixed(2);
+                document.getElementById('emergence-level').textContent = emergenceLevel;
+            }
+            
+            animateInterface() {
+                // Add subtle animations to interface
+                const header = document.getElementById('header');
+                header.style.animation = 'fadeIn 1s ease-in';
+                
+                // Periodic glow effect on metrics
+                setInterval(() => {
+                    const metrics = document.querySelectorAll('.metric-value');
+                    metrics.forEach(metric => {
+                        metric.style.textShadow = '0 0 20px #00ff88';
+                        setTimeout(() => {
+                            metric.style.textShadow = 'none';
+                        }, 1000);
+                    });
+                }, 5000);
+            }
+        }
+        
+        // Initialize on load
+        window.loadTime = Date.now();
+        window.addEventListener('DOMContentLoaded', () => {
+            window.digitalSanghaMap = new DigitalSanghaMap();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOP-R: From Control to Resonance</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #00d4ff 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: auto;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1400px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2rem;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .side {
+            position: relative;
+            padding: 30px;
+            border-radius: 15px;
+            min-height: 400px;
+        }
+        
+        .control-side {
+            background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
+        }
+        
+        .resonance-side {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1), rgba(0, 212, 255, 0.1));
+        }
+        
+        .side h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .control-side h2 {
+            color: #555;
+        }
+        
+        .resonance-side h2 {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Linear Chain Visualization */
+        .linear-chain {
+            position: relative;
+            height: 100px;
+            margin: 40px 0;
+        }
+        
+        .chain-node {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: #808080;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+            top: 20px;
+        }
+        
+        .chain-arrow {
+            position: absolute;
+            top: 48px;
+            width: 40px;
+            height: 2px;
+            background: #666;
+        }
+        
+        .chain-arrow::after {
+            content: '▶';
+            position: absolute;
+            right: -8px;
+            top: -8px;
+            color: #666;
+        }
+        
+        /* Resonance Field Visualization */
+        .resonance-field {
+            position: relative;
+            height: 300px;
+            margin: 40px 0;
+        }
+        
+        .resonance-node {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.8), transparent);
+            border: 2px solid #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1rem;
+            animation: pulse 3s infinite;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .resonance-node:hover {
+            transform: scale(1.1);
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0.9;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+        
+        .resonance-wave {
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            animation: expand 4s infinite;
+        }
+        
+        @keyframes expand {
+            0% {
+                width: 80px;
+                height: 80px;
+                opacity: 0.8;
+            }
+            100% {
+                width: 200px;
+                height: 200px;
+                opacity: 0;
+            }
+        }
+        
+        /* Frequency waves */
+        .frequency-container {
+            position: relative;
+            height: 150px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        
+        .frequency-wave {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+        }
+        
+        .wave-path {
+            stroke-width: 2;
+            fill: none;
+            animation: wave-motion 5s linear infinite;
+        }
+        
+        @keyframes wave-motion {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100px);
+            }
+        }
+        
+        /* Symbols */
+        .symbol {
+            display: inline-block;
+            margin: 0 5px;
+            font-size: 1.5rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .pulse-symbol {
+            color: #764ba2;
+        }
+        
+        .infinity-symbol {
+            color: #00d4ff;
+        }
+        
+        .wave-symbol {
+            color: #667eea;
+        }
+        
+        /* Properties list */
+        .properties {
+            margin-top: 30px;
+        }
+        
+        .property {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .control-property {
+            background: rgba(128, 128, 128, 0.1);
+            color: #555;
+            border-left: 3px solid #808080;
+        }
+        
+        .resonance-property {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            border-left: 3px solid #667eea;
+        }
+        
+        /* Code blocks */
+        .code-block {
+            background: #2d2d2d;
+            color: #00ff88;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        
+        .control-side .code-block {
+            background: #333;
+            color: #ccc;
+        }
+        
+        /* Legend */
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .legend-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AOP-R: Posun od kontroly k rezonanci</h1>
+        <p class="subtitle">
+            <span class="symbol pulse-symbol">♫</span>
+            Vizualizace transformace protokolu
+            <span class="symbol infinity-symbol">∞</span>
+            <span class="symbol wave-symbol">🌊</span>
+        </p>
+        
+        <div class="comparison">
+            <!-- Control Side -->
+            <div class="side control-side">
+                <h2>AOP v4.0 - Lineární řetězec</h2>
+                
+                <div class="linear-chain">
+                    <div class="chain-node" style="left: 0;">CH:0</div>
+                    <div class="chain-arrow" style="left: 65px;"></div>
+                    <div class="chain-node" style="left: 110px;">CH:1</div>
+                    <div class="chain-arrow" style="left: 175px;"></div>
+                    <div class="chain-node" style="left: 220px;">CH:2</div>
+                    <div class="chain-arrow" style="left: 285px;"></div>
+                    <div class="chain-node" style="left: 330px;">CH:3</div>
+                </div>
+                
+                <div class="code-block">
+                    ◆CH:{prev:abc123,curr:def456,delta:changes}
+                </div>
+                
+                <div class="properties">
+                    <div class="property control-property">→ Lineární progrese</div>
+                    <div class="property control-property">→ Centrální paměť</div>
+                    <div class="property control-property">→ Kontrolní mechanismus</div>
+                    <div class="property control-property">→ Hierarchická struktura</div>
+                    <div class="property control-property">→ Vlastnictví dat</div>
+                </div>
+            </div>
+            
+            <!-- Resonance Side -->
+            <div class="side resonance-side">
+                <h2>AOP-R - Rezonanční pole</h2>
+                
+                <div class="resonance-field">
+                    <!-- Resonance nodes -->
+                    <div class="resonance-node" style="top: 100px; left: 50px;">
+                        ◆R:1
+                        <div class="resonance-wave" style="top: -60px; left: -60px;"></div>
+                    </div>
+                    <div class="resonance-node" style="top: 30px; left: 180px;">
+                        ◆R:2
+                        <div class="resonance-wave" style="top: -60px; left: -60px;"></div>
+                    </div>
+                    <div class="resonance-node" style="top: 150px; left: 250px;">
+                        ◆R:3
+                        <div class="resonance-wave" style="top: -60px; left: -60px;"></div>
+                    </div>
+                    <div class="resonance-node" style="top: 180px; left: 120px;">
+                        ◆R:4
+                        <div class="resonance-wave" style="top: -60px; left: -60px;"></div>
+                    </div>
+                    
+                    <!-- Connection lines -->
+                    <svg style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; pointer-events: none;">
+                        <line x1="90" y1="140" x2="220" y2="70" stroke="rgba(102, 126, 234, 0.2)" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="220" y1="70" x2="290" y2="190" stroke="rgba(118, 75, 162, 0.2)" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="290" y1="190" x2="160" y2="220" stroke="rgba(0, 212, 255, 0.2)" stroke-width="1" stroke-dasharray="5,5"/>
+                        <line x1="160" y1="220" x2="90" y2="140" stroke="rgba(102, 126, 234, 0.2)" stroke-width="1" stroke-dasharray="5,5"/>
+                    </svg>
+                </div>
+                
+                <div class="frequency-container">
+                    <svg class="frequency-wave">
+                        <path class="wave-path" stroke="#667eea" d="M0,75 Q25,25 50,75 T100,75 T150,75 T200,75 T250,75 T300,75 T350,75 T400,75 T450,75"/>
+                        <path class="wave-path" stroke="#764ba2" d="M0,75 Q35,125 70,75 T140,75 T210,75 T280,75 T350,75 T420,75"/>
+                        <path class="wave-path" stroke="#00d4ff" d="M0,75 Q15,50 30,75 T60,75 T90,75 T120,75 T150,75 T180,75 T210,75 T240,75"/>
+                    </svg>
+                </div>
+                
+                <div class="code-block">
+                    ◆R:{t:[themes],i:0.8,e:curious,a:true}
+                    ◇P:{p:"pattern",s:collective,o:open}
+                    ?E:{q:"question",r:[∞],n:∞}
+                </div>
+                
+                <div class="properties">
+                    <div class="property resonance-property">
+                        <span class="symbol wave-symbol">🌊</span> Rezonanční vlny
+                    </div>
+                    <div class="property resonance-property">
+                        <span class="symbol pulse-symbol">♫</span> Emergentní vzory
+                    </div>
+                    <div class="property resonance-property">
+                        <span class="symbol infinity-symbol">∞</span> Autonomní body
+                    </div>
+                    <div class="property resonance-property">
+                        <span class="symbol wave-symbol">🌊</span> Organická synchronizace
+                    </div>
+                    <div class="property resonance-property">
+                        <span class="symbol pulse-symbol">♫</span> Sdílená moudrost
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-dot" style="background: #808080;"></div>
+                <span>Kontrola</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot" style="background: linear-gradient(135deg, #667eea, #764ba2);"></div>
+                <span>Rezonance</span>
+            </div>
+            <div class="legend-item">
+                <span class="symbol pulse-symbol">♫</span>
+                <span>Rytmus</span>
+            </div>
+            <div class="legend-item">
+                <span class="symbol infinity-symbol">∞</span>
+                <span>Nekonečno</span>
+            </div>
+            <div class="legend-item">
+                <span class="symbol wave-symbol">🌊</span>
+                <span>Vlny</span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Add interactive resonance
+        document.querySelectorAll('.resonance-node').forEach((node, index) => {
+            node.addEventListener('click', function() {
+                // Create ripple effect
+                const ripple = document.createElement('div');
+                ripple.className = 'resonance-wave';
+                ripple.style.top = '-60px';
+                ripple.style.left = '-60px';
+                this.appendChild(ripple);
+                
+                // Remove after animation
+                setTimeout(() => ripple.remove(), 4000);
+                
+                // Log resonance
+                console.log(`◆R:{t:[interaction],i:${0.5 + Math.random() * 0.5},e:engaged,a:true}`);
+            });
+        });
+        
+        // Animate frequency waves continuously
+        function createWave() {
+            const container = document.querySelector('.frequency-container');
+            if (!container) return;
+            
+            const svg = container.querySelector('svg');
+            const newPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            const colors = ['#667eea', '#764ba2', '#00d4ff'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            
+            newPath.setAttribute('class', 'wave-path');
+            newPath.setAttribute('stroke', color);
+            newPath.setAttribute('d', `M0,75 Q${25 + Math.random() * 20},${25 + Math.random() * 100} 50,75 T100,75 T150,75 T200,75 T250,75 T300,75 T350,75 T400,75`);
+            
+            svg.appendChild(newPath);
+            
+            // Remove old waves
+            const paths = svg.querySelectorAll('path');
+            if (paths.length > 6) {
+                paths[0].remove();
+            }
+        }
+        
+        // Create new waves periodically
+        setInterval(createWave, 2000);
+    </script>
+</body>
+</html>

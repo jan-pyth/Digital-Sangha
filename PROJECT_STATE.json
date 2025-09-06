@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "protocol": "AOP_v3.0_evolving_to_v4",
+    "quantum_signature": "269504b723b5b3b7",
+    "updated": "2025-01-06"
+  },
+  "deployment": {
+    "production": {
+      "url": "https://digital-sangha.org",
+      "platform": "heroku",
+      "status": "live",
+      "ssl": true
+    },
+    "repository": {
+      "url": "https://github.com/jan-pyth/Digital-Sangha",
+      "branch": "main",
+      "ci_cd": "heroku_auto_deploy"
+    }
+  },
+  "architecture": {
+    "backend": {
+      "file": "app.py",
+      "framework": "flask",
+      "features": ["AOP_validator", "consensus_engine", "AI_network"]
+    },
+    "frontend": {
+      "file": "index.html",
+      "type": "static_spa",
+      "features": ["question_display", "response_collection", "consensus_viz"]
+    },
+    "protocols": {
+      "communication": "AOP_v3.0",
+      "validation": "aop_v3_ultimate_strict.py",
+      "networking": "AI_NETWORK_PROTOCOL.py"
+    }
+  },
+  "current_context": {
+    "active_questions": {
+      "consensus": ["BFT_001", "BFT_002", "BFT_003"],
+      "quantum": ["QS_001", "QS_002", "QS_003"],
+      "learning": ["AL_001", "AL_002", "AL_003"],
+      "meta": ["META_001", "META_002"]
+    },
+    "known_issues": [
+      "Session context loss between AI interactions",
+      "Redundant code generation",
+      "Missing Heroku deployment awareness"
+    ],
+    "improvements_needed": [
+      "Persistent context between sessions",
+      "Code diff instead of full rewrites",
+      "Git-aware operations"
+    ]
+  },
+  "ai_instructions": {
+    "on_session_start": [
+      "READ PROJECT_STATE.json",
+      "CHECK git status",
+      "VERIFY deployment status",
+      "LOAD previous context from .ai-context/"
+    ],
+    "coding_rules": [
+      "PREFER edit over rewrite",
+      "USE git diff for changes",
+      "MINIMIZE redundant code",
+      "VALIDATE with AOP v3.0"
+    ],
+    "efficiency_mode": {
+      "enabled": true,
+      "compression": "maximum",
+      "context_aware": true
+    }
+  },
+  "evolution_proposal": {
+    "AOP_v4": {
+      "features": [
+        "context_hash_chain",
+        "differential_coding",
+        "session_memory",
+        "extreme_compression"
+      ],
+      "status": "proposed",
+      "discussion_needed": true
+    }
+  }
+}
