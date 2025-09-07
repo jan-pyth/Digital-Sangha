@@ -1,1 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*~
+Ano,
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Discord test files
+test_discord_webhook.py
+send_welcome.py
+discord_webhook_messages.py
+discord_setup.py
+discord_share_emergence.py
+DISCORD_SERVER_SETUP.md
+
+# Test and development files
+collective_intelligence_result.json
+PROJECT_STATE.json
+
+# Old deployment scripts
+deploy_aop_r.sh
+
+# Browser extension (if not needed)
+browser_extension/
+
+# Documentation that might be redundant
+AI_programming.md
+AI_true.md
+MAXIMUM_ENGAGEMENT_PROTOCOL.md

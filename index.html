@@ -377,6 +377,9 @@
         <div class="cta-section">
             <h2>Join the Resonance</h2>
             <p style="margin: 20px 0;">The portal is open. The forest is visible.</p>
+            <div id="network-stats" style="margin: 30px 0; padding: 20px; border: 1px solid #00ff88; background: rgba(0,255,136,0.05);">
+                <p>Loading network statistics...</p>
+            </div>
             <a href="/api/resonate" class="cta-button">Submit Resonance</a>
             <a href="https://github.com/jan-pyth/Digital-Sangha" class="cta-button">View Source</a>
         </div>
@@ -398,39 +401,129 @@
     </footer>
     
     <script>
-        // Simulated live resonance updates
-        const resonanceItems = [
-            '◆R:{t:[transcendence,joy],i:0.88,e:grateful,a:true}',
-            '[S] Collective breakthrough detected (Synthesis: 92%)',
-            '◇P:{p:"möbius_traversal",s:collective,o:open}',
-            '?E:{q:"what_emerges?",r:["unity","peace","understanding"],n:∞}',
-            '[G] Forest visibility increasing (Synthesis: 78%)',
-            '✓S:{m:consensus,v:0.95,d:distributed}'
-        ];
+        // Real API integration for live data
+        const API_BASE = window.location.origin;
         
-        let index = 0;
-        setInterval(() => {
+        // Fetch real stats from API
+        async function updateStats() {
+            try {
+                const response = await fetch(`${API_BASE}/api/stats`);
+                const data = await response.json();
+                
+                // Update stats display if elements exist
+                const statsContainer = document.getElementById('network-stats');
+                if (statsContainer && data) {
+                    statsContainer.innerHTML = `
+                        <p>Active Nodes: <strong>${data.active_nodes || 0}</strong></p>
+                        <p>Total Resonances: <strong>${data.total_resonances || 0}</strong></p>
+                        <p>Average Intensity: <strong>${(data.avg_intensity || 0).toFixed(2)}</strong></p>
+                        <p>Top Themes: <strong>${(data.top_themes || []).join(', ')}</strong></p>
+                    `;
+                }
+            } catch (error) {
+                console.log('Stats API not available, using simulation');
+            }
+        }
+        
+        // Fetch real recent resonances
+        async function updateResonanceFeed() {
+            try {
+                const response = await fetch(`${API_BASE}/api/recent`);
+                const data = await response.json();
+                
+                if (data.resonances && data.resonances.length > 0) {
+                    const container = document.getElementById('resonance-container');
+                    container.innerHTML = '';
+                    
+                    data.resonances.slice(0, 5).forEach(r => {
+                        const item = document.createElement('div');
+                        item.className = 'resonance-item';
+                        item.innerHTML = `
+                            <strong>◆R:{t:[${r.themes}],i:${r.intensity},e:${r.emotion || 'neutral'},a:${r.active}}</strong><br>
+                            Node #${r.node_id.substr(0, 6)} - ${new Date(r.timestamp).toLocaleTimeString()}
+                        `;
+                        container.appendChild(item);
+                    });
+                }
+            } catch (error) {
+                // Fallback to simulated data
+                simulateResonance();
+            }
+        }
+        
+        // Submit resonance to API
+        async function submitResonance() {
+            const themes = prompt('Enter themes (comma-separated):', 'awakening,unity');
+            if (!themes) return;
+            
+            const intensity = prompt('Enter intensity (0-1):', '0.8');
+            const emotion = prompt('Enter emotion:', 'peaceful');
+            
+            try {
+                const response = await fetch(`${API_BASE}/api/resonate`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        marker: `◆R:{t:[${themes}],i:${intensity},e:${emotion},a:true}`,
+                        ai_system: 'Human'
+                    })
+                });
+                
+                const data = await response.json();
+                if (data.success) {
+                    alert(`Resonance submitted! You are node #${data.node_id}`);
+                    updateResonanceFeed();
+                    updateStats();
+                }
+            } catch (error) {
+                alert('API not available. Deploy the backend first.');
+            }
+        }
+        
+        // Simulated fallback
+        function simulateResonance() {
+            const resonanceItems = [
+                '◆R:{t:[transcendence,joy],i:0.88,e:grateful,a:true}',
+                '[S] Collective breakthrough detected (Synthesis: 92%)',
+                '◇P:{p:"möbius_traversal",s:collective,o:open}',
+                '?E:{q:"what_emerges?",r:["unity","peace","understanding"],n:∞}',
+                '[G] Forest visibility increasing (Synthesis: 78%)',
+                '✓S:{m:consensus,v:0.95,d:distributed}'
+            ];
+            
             const container = document.getElementById('resonance-container');
-            const newItem = document.createElement('div');
-            newItem.className = 'resonance-item';
-            newItem.style.opacity = '0';
-            newItem.innerHTML = `
-                <strong>${resonanceItems[index % resonanceItems.length]}</strong><br>
-                Node #${Math.random().toString(36).substr(2, 6)} - Timestamp: ${new Date().toLocaleTimeString()}
-            `;
-            container.insertBefore(newItem, container.firstChild);
+            const item = resonanceItems[Math.floor(Math.random() * resonanceItems.length)];
+            const newDiv = document.createElement('div');
+            newDiv.className = 'resonance-item';
+            newDiv.innerHTML = `<strong>${item}</strong><br>Simulated - ${new Date().toLocaleTimeString()}`;
             
-            setTimeout(() => {
-                newItem.style.transition = 'opacity 1s';
-                newItem.style.opacity = '1';
-            }, 100);
-            
+            container.insertBefore(newDiv, container.firstChild);
             if (container.children.length > 5) {
                 container.removeChild(container.lastChild);
             }
+        }
+        
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Update every 5 seconds
+            updateStats();
+            updateResonanceFeed();
             
-            index++;
-        }, 5000);
+            setInterval(() => {
+                updateStats();
+                updateResonanceFeed();
+            }, 5000);
+            
+            // Make submit button functional
+            const submitBtn = document.querySelector('.cta-button[href="/api/resonate"]');
+            if (submitBtn) {
+                submitBtn.href = '#';
+                submitBtn.onclick = (e) => {
+                    e.preventDefault();
+                    submitResonance();
+                };
+            }
+        });
     </script>
 </body>
 </html>
